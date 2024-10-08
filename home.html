@@ -29,7 +29,7 @@
 
         /* Container for the map */
         #map {
-            width: 150%;  /* Adjust the width to fit nicely on different screens */
+            width: 100%; /* Adjust the width to fit nicely on different screens */
             height: auto; /* Height will adjust based on SVG */
             margin: 0 auto;
             border: 2px solid #333; /* Optional: Add a border around the map */
@@ -64,15 +64,15 @@
 <body>
 
     <div class="container">
-        <h1>Interactive World Map</h1>
+        <h1>Interactive World Map!</h1>
         <!-- Container for the map -->
         <svg id="map" viewBox="0 0 800 400">
-            <!-- Example of a simple country shape (rectangle) for demonstration -->
+            <!-- Example of country shapes using paths -->
             <g class="country" id="burundi" onclick="showInfo('Burundi')">
-                <rect x="350" y="200" width="40" height="30"></rect>
+                <path d="M 300 200 L 310 210 L 300 220 L 290 210 Z"></path>
             </g>
             <g class="country" id="canada" onclick="showInfo('Canada')">
-                <rect x="50" y="50" width="50" height="40"></rect>
+                <path d="M 100 50 L 120 70 L 100 90 L 80 70 Z"></path>
             </g>
             <!-- Add more country shapes here -->
         </svg>
