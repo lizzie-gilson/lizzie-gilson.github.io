@@ -157,6 +157,10 @@
     </style>
 </head>
 <body>
+    <div class="filter-container">
+        <input type="text" id="country-search" placeholder="Search country by name">
+        <button onclick="searchCountry()">Search</button>
+    </div>
 
     <div class="title-container">
         <h1>Interactive World Map!28</h1>
@@ -661,7 +665,7 @@
                 <div style="width: ${seattleWidth}px; height: 30px; background-color: #4CAF50; margin: 5px; display: inline-block;" title="${data.travel_time_seattle}"></div>
                 <div class="data-row"><strong>Travel Time from Cork:</strong> ${data.travel_time_cork}</div>
                 <div style="width: ${corkWidth}px; height: 30px; background-color: #2196F3; margin: 5px; display: inline-block;" title="${data.travel_time_cork}"></div>
-                <div class="data-row"><strong>Points of Interest:</strong> <img src="point_of_interest.jpg" class="large-icon" alt="Interest Icon" style="width: 50px; height: 50px;"> 
+                <div class="data-row"><img src="point_of_interest.jpg" class="large-icon" alt="Interest Icon" style="width: 50px; height: 50px;"> <strong>Points of Interest:</strong> 
                     <ul>${pointsOfInterestList}</ul>
                 </div>
                 <div class="data-row"><img src="${data.traveled_before === 'Yes' ? 'visited_icon.png' : 'not_visited_icon.png'}" class="icon" alt="Visited Icon"> <strong>First time visiting? </strong> ${data.traveled_before}</div>
@@ -713,6 +717,25 @@
                 tableBody.appendChild(row);
             }
         });
+    }
+     function searchCountry() {
+        const searchQuery = document.getElementById('country-search').value.toLowerCase();
+        const countries = document.querySelectorAll('.country');
+        let found = false;
+
+        countries.forEach(country => {
+            const countryName = country.getAttribute('data-name').toLowerCase();
+            if (countryName.includes(searchQuery)) {
+                country.style.fill = 'yellow'; // Highlight the country
+                found = true;
+            } else {
+                country.style.fill = 'lightgreen'; // Reset other countries
+            }
+        });
+
+        if (!found) {
+            alert("Country not found!");
+        }
     }
 
     // Adding click event listener to country paths
