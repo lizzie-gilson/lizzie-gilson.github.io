@@ -80,6 +80,35 @@
         }
 
         /* Styling for country info */
+         .data-row {
+            margin: 10px 0;
+        }
+
+         .safety-rating {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .safety-high {
+            background-color: green;
+        }
+        .safety-medium {
+            background-color: yellow;
+        }
+        .safety-low {
+            background-color: red;
+        }
+
+         .icon {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        
         #info {
             margin-top: 20px;
             padding: 10px;
@@ -98,7 +127,7 @@
     </div>
     <div class="container">
         <!-- Container for the map -->
-        <svg id="map" viewBox="0 0 1000 500" onclick="handleClick(event)">
+        <svg id="map" viewBox="width: 80vw; height: 80vh;" onclick="handleClick(event)">
             <style>
                 .country {
                     fill: lightgreen;
@@ -544,15 +573,26 @@
             const infoDiv = document.getElementById('info');
             if (countryData[country]) {
                 const data = countryData[country];
+                // Determine safety rating color
+                let safetyClass = 'safety-low';
+                if (data.safety_rating === 'High') {
+                    safetyClass = 'safety-high';
+                } else if (data.safety_rating === 'Medium') {
+                    safetyClass = 'safety-medium';
+                }
+
                 // Display country information
                 infoDiv.innerHTML = `
-                    <strong>${country}</strong><br>
-                    Safety Rating: ${data.safety_rating}<br>
-                    Travel Time from Seattle: ${data.travel_time_seattle}<br>
-                    Travel Time from Cork:  ${data.travel_time_cork}<br>
-                    Points of Interest: ${data.points_of_interest}<br>
-                    Have you been there before: ${data.traveled_before}
-            `;
+                    <div style="font-size: 24px; font-weight: bold;">You clicked on ${country}!</div><br>
+                    <div class="data-row">
+                        <span class="safety-rating ${safetyClass}"></span>
+                        Safety Rating: ${data.safety_rating}
+                    </div>
+                    <div class="data-row">Travel Time from Seattle: ${data.travel_time_seattle}</div>
+                    <div class="data-row">Travel Time from Cork: ${data.travel_time_cork}</div>
+                    <div class="data-row">Points of Interest: <img src="icon-interest.png" class="icon" alt="Interest Icon"> ${data.points_of_interest}</div>
+                    <div class="data-row">Have you been there before: <img src="icon-visited.png" class="icon" alt="Visited Icon"> ${data.traveled_before}</div>
+                `;
             } else {
                 infoDiv.innerHTML = `<strong>No data available for ${country}</strong>`;
             }
