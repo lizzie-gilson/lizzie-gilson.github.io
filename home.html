@@ -46,7 +46,8 @@
         /* Container for the map */
        #map {
             flex: 1; /* Allow the map to take remaining space */
-            height: 100vh; /* Set a specific height for the map */
+            height: 200px; /* Set a specific height for the map */
+            width: 400px;
             margin-right: 20px;
             border: 2px solid #333;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -569,49 +570,59 @@
             })
             .catch(error => console.error('Error loading data:', error));
 
-        function showInfo(country) {
-            const infoDiv = document.getElementById('info');
-            if (countryData[country]) {
-                const data = countryData[country];
-                const maxHeight = 500; // Maximum height for the bar
-                const seattleHeight = (data.travel_time_seattle) * maxHeight; // Assuming travel time is in minutes
-                const corkHeight = (data.travel_time_cork) * maxHeight; // Assuming travel time is in minutes
+       function showInfo(country) {
+        const infoDiv = document.getElementById('info');
+        if (countryData[country]) {
+            const data = countryData[country];
+            const maxHeight = 500; // Maximum height for the bar
 
-                // Determine safety rating color
-                let safetyClass = 'safety-low';
-                if (data.safety_rating === 'High') {
-                    safetyClass = 'safety-high';
-                } else if (data.safety_rating === 'Medium') {
-                    safetyClass = 'safety-medium';
-                }
+            // Convert travel time from hours to pixels for bar heights
+            const travelTimeToPixels = (time) => {
+                const hours = parseInt(time.split(' ')[0], 10); // Extract number of hours
+                return (hours / 24) * maxHeight; // Convert hours to a pixel height based on a 24-hour scale
+            };
 
-                // Display country information
-                infoDiv.innerHTML = `
-                    <div style="font-size: 24px; font-weight: bold;">You clicked on ${country}!</div><br>
-                    <div class="data-row">
-                        <span class="safety-rating ${safetyClass}"></span>
-                        Safety Rating: ${data.safety_rating}
-                    </div>
-                    <div class="data-row">Travel Time from Seattle: ${data.travel_time_seattle}</div>
-                    <div style="height: ${seattleHeight}px; width: 30px; background-color: #4CAF50; margin: 5px; display: inline-block;" title="${data.travel_time_seattle} mins"></div>
-                    <div class="data-row">Travel Time from Cork: ${data.travel_time_cork}</div>
-                    <div style="height: ${corkHeight}px; width: 30px; background-color: #2196F3; margin: 5px; display: inline-block;" title="${data.travel_time_cork} mins"></div>
-                    <div class="data-row">Points of Interest: <img src="point_of_interest.jpg" class="icon" alt="Interest Icon"> ${data.points_of_interest}</div>
-                    <div class="data-row">Have you been there before: <img src="new_icon.png" class="icon" alt="Visited Icon"> ${data.traveled_before}</div>
-                `;
-            } else {
-                infoDiv.innerHTML = `<strong>No data available for ${country}</strong>`;
+            const seattleHeight = travelTimeToPixels(data.travel_time_seattle);
+            const corkHeight = travelTimeToPixels(data.travel_time_cork);
+
+            // Determine safety rating color
+            let safetyClass = 'safety-low';
+            if (data.safety_rating === 'High') {
+                safetyClass = 'safety-high';
+            } else if (data.safety_rating === 'Medium') {
+                safetyClass = 'safety-medium';
             }
+
+            // Determine the icon based on travel history
+            const icon = data.traveled_before === 'yes' ? 'old_icon.png' : 'new_icon.png';
+
+            // Display country information
+            infoDiv.innerHTML = `
+                <div style="font-size: 24px; font-weight: bold;">You clicked on ${country}!</div><br>
+                <div class="data-row">
+                    <span class="safety-rating ${safetyClass}"></span>
+                    Safety Rating: ${data.safety_rating}
+                </div>
+                <div class="data-row">Travel Time from Seattle: ${data.travel_time_seattle}</div>
+                <div style="height: ${seattleHeight}px; width: 30px; background-color: #4CAF50; margin: 5px; display: inline-block;" title="${data.travel_time_seattle}"></div>
+                <div class="data-row">Travel Time from Cork: ${data.travel_time_cork}</div>
+                <div style="height: ${corkHeight}px; width: 30px; background-color: #2196F3; margin: 5px; display: inline-block;" title="${data.travel_time_cork}"></div>
+                <div class="data-row">Points of Interest: <img src="point_of_interest.jpg" class="large-icon" alt="Interest Icon" style="width: 50px; height: 50px;"> ${data.points_of_interest.join(', ')}</div>
+                <div class="data-row">Have you been there before: <img src="${icon}" class="icon" alt="Visited Icon"> ${data.traveled_before}</div>
+            `;
+        } else {
+            infoDiv.innerHTML = `<strong>No data available for ${country}</strong>`;
         }
-        function handleClick(event) {
-            const target = event.target;
-            if (target.classList.contains('country')) {
-                const countryName = target.getAttribute('data-name');
-                showInfo(countryName);
-            }
+    }
+    function handleClick(event) {
+        const target = event.target;
+        if (target.classList.contains('country')) {
+            const countryName = target.getAttribute('data-name');
+            showInfo(countryName);
         }
-         document.getElementById('map').addEventListener('click', handleClick);
-    </script>
+    }
+    document.getElementById('map').addEventListener('click', handleClick);
+</script>
 
 </body>
 </html>
