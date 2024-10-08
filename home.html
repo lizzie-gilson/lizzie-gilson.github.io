@@ -633,6 +633,7 @@
         fetch('countriesData.json')
             .then(response => response.json())
             .then(data => {
+                console.log(data)
                 countryData = data; // Store the fetched data in a variable
                 filterTable();
             })
