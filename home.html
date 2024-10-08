@@ -638,6 +638,8 @@
             .catch(error => console.error('Error loading data:', error));
 
     function showInfo(country) {
+            let seattleWidth = data.travel_time_seattle * 10; // Adjust the multiplier based on how you want the width to be
+            let corkWidth = data.travel_time_cork * 10;
             const infoDiv = document.getElementById('info');
             if (countryData[country]) {
                 const data = countryData[country];
@@ -661,7 +663,7 @@
                 <div class="data-row"><strong>Points of Interest:</strong> <img src="point_of_interest.jpg" class="large-icon" alt="Interest Icon" style="width: 50px; height: 50px;"> 
                     <ul>${pointsOfInterestList}</ul>
                 </div>
-                <div class="data-row"><img src="${data.traveled_before === 'Yes' ? 'visited_icon.jpg' : 'not_visited_icon.jpg'}" class="icon" alt="Visited Icon"> <strong>First time visiting? </strong> ${data.traveled_before}</div>
+                <div class="data-row"><img src="${data.traveled_before === 'Yes' ? 'visited_icon.png' : 'not_visited_icon.png'}" class="icon" alt="Visited Icon"> <strong>First time visiting? </strong> ${data.traveled_before}</div>
             `;
             } else {
                 infoDiv.innerHTML = `<strong>No data available for ${country}</strong>`;
