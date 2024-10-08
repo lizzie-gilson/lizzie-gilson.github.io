@@ -123,7 +123,7 @@
 <body>
 
     <div class="title-container">
-        <h1>Interactive World Map!77</h1>
+        <h1>Interactive World Map!88</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -573,6 +573,10 @@
             const infoDiv = document.getElementById('info');
             if (countryData[country]) {
                 const data = countryData[country];
+                const maxHeight = 500; // Maximum height for the bar
+                const seattleHeight = (data.travel_time_seattle) * maxHeight; // Assuming travel time is in minutes
+                const corkHeight = (data.travel_time_cork) * maxHeight; // Assuming travel time is in minutes
+
                 // Determine safety rating color
                 let safetyClass = 'safety-low';
                 if (data.safety_rating === 'High') {
@@ -589,7 +593,9 @@
                         Safety Rating: ${data.safety_rating}
                     </div>
                     <div class="data-row">Travel Time from Seattle: ${data.travel_time_seattle}</div>
+                    <div style="height: ${seattleHeight}px; width: 30px; background-color: #4CAF50; margin: 5px; display: inline-block;" title="${data.travel_time_seattle} mins"></div>
                     <div class="data-row">Travel Time from Cork: ${data.travel_time_cork}</div>
+                    <div style="height: ${corkHeight}px; width: 30px; background-color: #2196F3; margin: 5px; display: inline-block;" title="${data.travel_time_cork} mins"></div>
                     <div class="data-row">Points of Interest: <img src="point_of_interest.jpg" class="icon" alt="Interest Icon"> ${data.points_of_interest}</div>
                     <div class="data-row">Have you been there before: <img src="new_icon.png" class="icon" alt="Visited Icon"> ${data.traveled_before}</div>
                 `;
