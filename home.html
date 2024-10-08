@@ -159,7 +159,7 @@
 <body>
 
     <div class="title-container">
-        <h1>Interactive World Map!24</h1>
+        <h1>Interactive World Map!25</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -627,7 +627,7 @@
 
 
     <script>
-      
+       
         let countryData; // Declare globally
         fetch('countriesData.json')
             .then(response => response.json())
@@ -659,19 +659,22 @@
                 infoDiv.innerHTML = `<strong>No data available for ${country}</strong>`;
             }
         }
-    
-    function handleClick(event) {
-        const target = event.target;
-        if (target.classList.contains('country')) {
-            const countryName = target.getAttribute('data-name');
-            showInfo(countryName);
+        function handleClick(event) {
+            const target = event.target;
+            if (target.classList.contains('country')) {
+                const countryName = target.getAttribute('data-name');
+                showInfo(countryName);
+            }
         }
-    }
+      
+    
+  
     document.getElementById('map').addEventListener('click', handleClick);
 
-         function filterTable() {
-            const searchValue = document.getElementById('search').value.toLowerCase();
-            const safetyFilter = document.getElementById('safety-filter').value;
+    function filterTable() {
+         const searchValue = document.getElementById('search').value.toLowerCase();
+         const safetyFilter = document.getElementById('safety-filter').value;
+    }
            
 </script>
 
