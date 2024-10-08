@@ -157,13 +157,10 @@
     </style>
 </head>
 <body>
-    <div class="filter-container">
-        <input type="text" id="country-search" placeholder="Search country by name">
-        <button onclick="filterTable()">Search</button>
-    </div>
+ 
 
     <div class="title-container">
-        <h1>Interactive World Map!30</h1>
+        <h1>Interactive World Map!31</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -652,7 +649,7 @@
                  // Convert travel time from hours to pixels for bar widths
                 const travelTimeToPixels = (time) => {
                     const hours = parseInt(time.split(' ')[0], 10); // Extract number of hours
-                    return (hours / 24) * maxWidth; // Convert hours to a pixel width based on a 24-hour scale
+                    return (hours / 35) * maxWidth; // Convert hours to a pixel width based on a 24-hour scale
                 };
                 const seattleWidth =  travelTimeToPixels(data.travel_time_seattle);
                 const corkWidth = travelTimeToPixels(data.travel_time_cork);
@@ -698,32 +695,30 @@
         const searchInput = document.getElementById('search').value.toLowerCase();
         const safetyFilter = document.getElementById('safety-filter').value;
         const visitedFilter = document.getElementById('visited-filter').value;
-        const seattleTimeFilter = document.getElementById('seattle-time-filter').value;
-        const corkTimeFilter = document.getElementById('cork-time-filter').value;
+        // const seattleTimeFilter = document.getElementById('seattle-time-filter').value;
+        // const corkTimeFilter = document.getElementById('cork-time-filter').value;
 
         const tableBody = document.getElementById('table-body');
         tableBody.innerHTML = ''; // Clear previous results
 
         // Filter the countryData based on input values
-        Object.keys(countryData).forEach(country => {
-            const data = countryData[country];
-            const matchesSearch = country.toLowerCase().includes(searchInput);
-            const matchesSafety = safetyFilter ? data.safety_rating === safetyFilter : true;
-            const matchesVisited = visitedFilter ? data.traveled_before === visitedFilter : true;
-            const matchesSeattleTime = seattleTimeFilter ? data.travel_time_seattle <= seattleTimeFilter : true;
-            const matchesCorkTime = corkTimeFilter ? data.travel_time_cork <= corkTimeFilter : true;
+        countryData.forEach(country => {
+        const countryName = country.name.toLowerCase();
+        const matchesSearch = !searchInput || countryName.includes(searchInput);
+        const matchesSafety = !safetyFilter || country.safety_rating === safetyFilter;
+        const matchesVisited = !visitedFilter || country.traveled_before === visitedFilter;
 
-            if (matchesSearch && matchesSafety && matchesVisited && matchesSeattleTime && matchesCorkTime) {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td onclick="showInfo('${country}')">${country}</td>
-                    <td>${data.safety_rating}</td>
-                    <td>${data.travel_time_seattle}</td>
-                    <td>${data.travel_time_cork}</td>
-                    <td>${data.traveled_before}</td>
-                `;
-                tableBody.appendChild(row);
-            }
+        if (matchesSearch && matchesSafety && matchesVisited) {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${country.name}</td>
+                <td>${country.safety_rating}</td>
+                <td>${country.travel_time_seattle}</td>
+                <td>${country.travel_time_cork}</td>
+                <td>${country.traveled_before}</td>
+            `;
+            tableBody.appendChild(row);
+        }
         });
     }
      function searchCountry() {
