@@ -29,6 +29,7 @@
             color: #333;
             font-size: 2rem;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         /* Container for the map */
@@ -81,7 +82,7 @@
 <body>
 
     <div class="container">
-        <h1>Interactive World Map!423</h1>
+        <h1>Interactive World Map!5</h1>
         <!-- Container for the map -->
         <svg id="map" viewBox="0 0 2000 1500" onclick="handleClick(event)">
             <style>
@@ -532,10 +533,12 @@
                 // Display country information
                 infoDiv.innerHTML = `
                     <strong>${country}</strong><br>
-                    Capital: ${data.capital}<br>
-                    Population: ${data.population}<br>
-                    Area: ${data.area}
-                `;
+                    Safety Rating: ${data.safety_rating}<br>
+                    Travel Time from Seattle: ${data.travel_time_seattle}<br>
+                    Travel Time from Cork:  ${data.travel_time_cork}<br>
+                    Points of Interest: ${data.points_of_interest}<br>
+                    Have you been there before: ${data.traveled_before}
+            ';
             } else {
                 infoDiv.innerHTML = `<strong>No data available for ${country}</strong>`;
             }
