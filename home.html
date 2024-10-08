@@ -4,31 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive World Map</title>
-    <!-- Add any necessary CSS here -->
+    
+    <!-- Add CSS styles -->
     <style>
+        /* Basic body styling */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
+
+        /* Title styling */
+        h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Container for the map */
         #map {
-            width: 100%;
-            height: 500px;
+            width: 80%;  /* Adjust the width to fit nicely on different screens */
+            height: 500px; /* Height of the map container */
             margin: 0 auto;
+            border: 2px solid #333; /* Optional: Add a border around the map */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a more polished look */
+            background-color: #ffffff; /* Ensure the background is white */
+        }
+
+        /* Center content vertically and horizontally */
+        .container {
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <h1>Interactive World Map</h1>
-    <!-- Container for the map -->
-    <div id="map"></div>
+    <div class="container">
+        <h1>Interactive World Map!</h1>
+        <!-- Container for the map -->
+        <div id="map"></div>
+    </div>
 
     <!-- Include the world map JS -->
-    <script src="map_data.js"></script>
-    <script src="https://simplemaps.com/resources/worldmap.js"></script>
+    <script src="map_data.js"></script> <!-- Make sure this file is in the correct directory -->
+
+    <!-- Include the Simple Maps library -->
+    <script src="https://simplemaps.com/resources/js/worldmap.js"></script>
 
     <script>
         // Initialize the world map
         simplemaps_worldmap.load();
     </script>
+
 </body>
 </html>
