@@ -159,11 +159,11 @@
 <body>
     <div class="filter-container">
         <input type="text" id="country-search" placeholder="Search country by name">
-        <button onclick="searchCountry()">Search</button>
+        <button onclick="filterTable()">Search</button>
     </div>
 
     <div class="title-container">
-        <h1>Interactive World Map!28</h1>
+        <h1>Interactive World Map!30</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -646,8 +646,16 @@
             const infoDiv = document.getElementById('info');
             if (countryData[country]) {
                 const data = countryData[country];
-                let seattleWidth = data.travel_time_seattle * 10; // Moved inside where 'data' is defined
-                let corkWidth = data.travel_time_cork * 10;
+              
+
+                const maxWidth = 500;
+                 // Convert travel time from hours to pixels for bar widths
+                const travelTimeToPixels = (time) => {
+                    const hours = parseInt(time.split(' ')[0], 10); // Extract number of hours
+                    return (hours / 24) * maxWidth; // Convert hours to a pixel width based on a 24-hour scale
+                };
+                const seattleWidth =  travelTimeToPixels(data.travel_time_seattle);
+                const corkWidth = travelTimeToPixels(data.travel_time_cork);
     
                 let safetyClass = 'safety-low';
                 if (data.safety_rating === 'High') safetyClass = 'safety-high';
@@ -746,6 +754,8 @@
             showInfo(countryName);
         });
     });
+   
+
 </script>
 </body>
 </html>
