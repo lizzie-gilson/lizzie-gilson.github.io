@@ -159,7 +159,7 @@
 <body>
 
     <div class="title-container">
-        <h1>Interactive World Map!25</h1>
+        <h1>Interactive World Map!26</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -648,13 +648,20 @@
                 const pointsOfInterestList = data.points_of_interest.map(point => `<li>${point}</li>`).join('');
 
                 infoDiv.innerHTML = `
-                    <div style="font-size: 24px; font-weight: bold;">You clicked on ${country}!</div><br>
-                    <strong>Safety Rating:</strong> ${data.safety_rating}<br>
-                    <strong>Travel Time from Seattle:</strong> ${data.travel_time_seattle}<br>
-                    <strong>Travel Time from Cork:</strong> ${data.travel_time_cork}<br>
-                    <strong>Points of Interest:</strong> <ul>${pointsOfInterestList}</ul>
-                    <strong>First time visiting?</strong> ${data.traveled_before}
-                `;
+                   <div style="font-size: 24px; font-weight: bold;">You clicked on ${country}!</div><br>
+                <div class="data-row">
+                    <span class="safety-rating ${safetyClass}"></span>
+                    <strong>Safety Rating:</strong> ${data.safety_rating}
+                </div>
+                <div class="data-row"><strong>Travel Time from Seattle:</strong> ${data.travel_time_seattle}</div>
+                <div style="width: ${seattleWidth}px; height: 30px; background-color: #4CAF50; margin: 5px; display: inline-block;" title="${data.travel_time_seattle}"></div>
+                <div class="data-row"><strong>Travel Time from Cork:</strong> ${data.travel_time_cork}</div>
+                <div style="width: ${corkWidth}px; height: 30px; background-color: #2196F3; margin: 5px; display: inline-block;" title="${data.travel_time_cork}"></div>
+                <div class="data-row"><strong>Points of Interest:</strong> <img src="point_of_interest.jpg" class="large-icon" alt="Interest Icon" style="width: 50px; height: 50px;"> 
+                    <ul>${pointsOfInterestList}</ul>
+                </div>
+                <div class="data-row"><img src="${icon}" class="icon" alt="Visited Icon"> <strong>First time visiting? </strong> ${data.traveled_before}</div>
+            `;
             } else {
                 infoDiv.innerHTML = `<strong>No data available for ${country}</strong>`;
             }
@@ -671,10 +678,43 @@
   
     document.getElementById('map').addEventListener('click', handleClick);
 
-    function filterTable() {
-         const searchValue = document.getElementById('search').value.toLowerCase();
-         const safetyFilter = document.getElementById('safety-filter').value;
-    }
+   function filterTable() {
+            const searchInput = document.getElementById('search').value.toLowerCase();
+            const safetyFilter = document.getElementById('safety-filter').value;
+            const visitedFilter = document.getElementById('visited-filter').value;
+
+            const tableBody = document.getElementById('table-body');
+            tableBody.innerHTML = ''; // Clear previous results
+
+            // Filter the countryData based on input values
+            Object.keys(countryData).forEach(country => {
+                const data = countryData[country];
+                const matchesSearch = country.toLowerCase().includes(searchInput);
+                const matchesSafety = safetyFilter ? data.safety_rating === safetyFilter : true;
+                const matchesVisited = visitedFilter ? data.traveled_before === visitedFilter : true;
+
+                if (matchesSearch && matchesSafety && matchesVisited) {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td onclick="showInfo('${country}')">${country}</td>
+                        <td>${data.safety_rating}</td>
+                        <td>${data.travel_time_seattle}</td>
+                        <td>${data.travel_time_cork}</td>
+                        <td>${data.traveled_before}</td>
+                    `;
+                    tableBody.appendChild(row);
+                }
+            });
+        }
+
+        // Adding click event listener to country paths
+        const countries = document.querySelectorAll('.country');
+        countries.forEach(country => {
+            country.addEventListener('click', () => {
+                const countryName = country.getAttribute('data-name');
+                showInfo(countryName);
+            });
+        });
            
 </script>
 
