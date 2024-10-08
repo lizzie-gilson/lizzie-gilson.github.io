@@ -28,6 +28,14 @@
             margin: 0 auto; /* Center the container */
         }
         /* Title styling */
+
+         .title-container {
+            width: 80%; /* Set a width for the title container */
+            max-width: 1200px; /* Maximum width for larger screens */
+            margin-bottom: 20px; /* Space below the title container */
+            text-align: center; /* Center the title text */
+        }
+        
         h1 {
             color: #333;
             font-size: 2rem;
@@ -85,8 +93,10 @@
 </head>
 <body>
 
+    <div class="title-container">
+        <h1>Interactive World Map!7</h1>
+    </div>div>
     <div class="container">
-        <h1>Interactive World Map!6</h1>
         <!-- Container for the map -->
         <svg id="map" viewBox="0 0 2000 1500" onclick="handleClick(event)">
             <style>
