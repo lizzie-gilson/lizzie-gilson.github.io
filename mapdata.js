@@ -69,76 +69,137 @@ var simplemaps_worldmap_mapdata = {
 	},
 
 	state_specific: {
-		"AF":{
-			name: "Afghanistan",
-			description: "default",
-			color: "default",
-			hover_color: "default",
-			url: "default"
-		},
-		"AO":{
-			name: "Angola",
-			description: "default",
-			color: "default",
-			hover_color: "default",
-			url: "default"
-		},
-		"AL":{
-			name: "Albania",
-			description: "default",
-			color: "default",
-			hover_color: "default",
-			url: "default"
-		},
-		"AE":{
-			name: "United Arab Emirates",
-			description: "default",
-			color: "default",
-			hover_color: "default",
-			url: "default"
-		},
-		"AR":{
-			name: "Argentina",
-			description: "default",
-			color: "default",
-			hover_color: "default",
-			url: "default"
-		},
-		"AM":{
-			name: "Armenia",
-			description: "default",
-			color: "default",
-			hover_color: "default",
-			url: "default"
-		},
-		"AU":{
-			name: "Australia",
-			description: "default",
-			color: "default",
-			hover_color: "default",
-			url: "default"
-		},
-		"AT":{
-			name: "Austria",
-			description: "default",
-			color: "default",
-			hover_color: "default",
-			url: "default"
-		},
-		"AZ":{
-			name: "Azerbaijan",
-			description: "default",
-			color: "default",
-			hover_color: "default",
-			url: "default"
-		},
-		"BI":{
-			name: "Burundi",
-			description: "default",
-			color: "default",
-			hover_color: "default",
-			url: "default"
-		},
+		"AF": {
+		    "name": "Afghanistan",
+		    "description": "default",
+		    "color": "default",
+		    "hover_color": "default",
+		    "url": "default",
+		    "safe_rating": 2,
+		    "distance_from_seattle": "16 hours flight",
+		    "distance_from_ireland": "8 hours flight",
+		    "points_of_interest": ["Kabul", "Bamiyan", "Herat"],
+		    "traveled_before": "no",
+		    "interest_rating": 3
+		  },
+		  "AO": {
+		    "name": "Angola",
+		    "description": "default",
+		    "color": "default",
+		    "hover_color": "default",
+		    "url": "default",
+		    "safe_rating": 3,
+		    "distance_from_seattle": "19 hours flight",
+		    "distance_from_ireland": "13 hours flight",
+		    "points_of_interest": ["Luanda", "Kissama National Park"],
+		    "traveled_before": "no",
+		    "interest_rating": 4
+		  },
+		  "AL": {
+		    "name": "Albania",
+		    "description": "default",
+		    "color": "default",
+		    "hover_color": "default",
+		    "url": "default",
+		    "safe_rating": 4,
+		    "distance_from_seattle": "15 hours flight",
+		    "distance_from_ireland": "3 hours flight",
+		    "points_of_interest": ["Tirana", "Butrint", "Saranda"],
+		    "traveled_before": "no",
+		    "interest_rating": 2
+		  },
+		  "AE": {
+		    "name": "United Arab Emirates",
+		    "description": "default",
+		    "color": "default",
+		    "hover_color": "default",
+		    "url": "default",
+		    "safe_rating": 5,
+		    "distance_from_seattle": "14 hours flight",
+		    "distance_from_ireland": "7 hours flight",
+		    "points_of_interest": ["Dubai", "Abu Dhabi", "Sharjah"],
+		    "traveled_before": "no",
+		    "interest_rating": 3
+		  },
+		  "AR": {
+		    "name": "Argentina",
+		    "description": "default",
+		    "color": "default",
+		    "hover_color": "default",
+		    "url": "default",
+		    "safe_rating": 4,
+		    "distance_from_seattle": "18 hours flight",
+		    "distance_from_ireland": "15 hours flight",
+		    "points_of_interest": ["Buenos Aires", "Mendoza", "Iguazu Falls"],
+		    "traveled_before": "no",
+		    "interest_rating": 2
+		  },
+		  "AM": {
+		    "name": "Armenia",
+		    "description": "default",
+		    "color": "default",
+		    "hover_color": "default",
+		    "url": "default",
+		    "safe_rating": 4,
+		    "distance_from_seattle": "15 hours flight",
+		    "distance_from_ireland": "5 hours flight",
+		    "points_of_interest": ["Yerevan", "Lake Sevan"],
+		    "traveled_before": "no",
+		    "interest_rating": 3
+		  },
+		  "AU": {
+		    "name": "Australia",
+		    "description": "default",
+		    "color": "default",
+		    "hover_color": "default",
+		    "url": "default",
+		    "safe_rating": 5,
+		    "distance_from_seattle": "20 hours flight",
+		    "distance_from_ireland": "20 hours flight",
+		    "points_of_interest": ["Sydney", "Great Barrier Reef", "Melbourne"],
+		    "traveled_before": "no",
+		    "interest_rating": 1
+		  },
+		  "AT": {
+		    "name": "Austria",
+		    "description": "default",
+		    "color": "default",
+		    "hover_color": "default",
+		    "url": "default",
+		    "safe_rating": 5,
+		    "distance_from_seattle": "13 hours flight",
+		    "distance_from_ireland": "2 hours flight",
+		    "points_of_interest": ["Vienna", "Salzburg", "Innsbruck"],
+		    "traveled_before": "no",
+		    "interest_rating": 2
+		  },
+		  "AZ": {
+		    "name": "Azerbaijan",
+		    "description": "default",
+		    "color": "default",
+		    "hover_color": "default",
+		    "url": "default",
+		    "safe_rating": 3,
+		    "distance_from_seattle": "15 hours flight",
+		    "distance_from_ireland": "5 hours flight",
+		    "points_of_interest": ["Baku", "Gobustan National Park"],
+		    "traveled_before": "no",
+		    "interest_rating": 4
+		  }
+		
+		"BI": {
+		    "name": "Burundi",
+		    "description": "default",
+		    "color": "default",
+		    "hover_color": "default",
+		    "url": "default",
+		    "safe_rating": 2,
+		    "distance_from_seattle": "22 hours flight",
+		    "distance_from_ireland": "13 hours flight",
+		    "points_of_interest": ["Gitega", "Bujumbura"],
+		    "traveled_before": "no",
+		    "interest_rating": 3
+		  },
 		"BE":{
 			name: "Belgium",
 			description: "default",
@@ -279,13 +340,19 @@ var simplemaps_worldmap_mapdata = {
 			hover_color: "default",
 			url: "default"
 		},
-		"CM":{
-			name: "Cameroon",
-			description: "default",
-			color: "default",
-			hover_color: "default",
-			url: "default"
-		},
+		 "CM": {
+		    "name": "Cameroon",
+		    "description": "default",
+		    "color": "default",
+		    "hover_color": "default",
+		    "url": "default",
+		    "safe_rating": 3,
+		    "distance_from_seattle": "20 hours flight",
+		    "distance_from_ireland": "12 hours flight",
+		    "points_of_interest": ["Yaoundé", "Douala"],
+		    "traveled_before": "no",
+		    "interest_rating": 4
+		  },
 		"CD":{
 			name: "Democratic Republic of the Congo",
 			description: "default",
