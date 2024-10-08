@@ -62,6 +62,16 @@
             border-radius: 5px;
             text-align: left;
         }
+         .filter-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        input[type="text"], select, button {
+            padding: 8px;
+            margin: 10px;
+            width: 200px;
+        }
 
         /* Style for country */
       .country {
@@ -99,16 +109,7 @@
         }
 
         /* Filter and search bar styles */
-        .filter-container {
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        input[type="text"], select {
-            padding: 8px;
-            margin: 10px;
-            width: 200px;
-        }
+      
         
         .ocean {
             fill: lightblue; /* Ocean color */
@@ -158,7 +159,7 @@
 <body>
 
     <div class="title-container">
-        <h1>Interactive World Map!23</h1>
+        <h1>Interactive World Map!24</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -590,20 +591,22 @@
         <div id="info">
             <strong>Select a country to see information here</strong>
         </div>
+    </div>
          <!-- Filters and search box -->
     <div class="filter-container">
-        <input type="text" id="search" placeholder="Search country..." oninput="filterTable()">
-        <select id="safety-filter" onchange="filterTable()">
+        <input type="text" id="search" placeholder="Search country...">
+        <select id="safety-filter">
             <option value="">Filter by Safety</option>
             <option value="High">High</option>
             <option value="Medium">Medium</option>
             <option value="Low">Low</option>
         </select>
-        <select id="visited-filter" onchange="filterTable()">
+        <select id="visited-filter">
             <option value="">Visited before?</option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
         </select>
+        <button onclick="filterTable()">Search</button>
     </div>
 
     <!-- Data table -->
@@ -623,9 +626,6 @@
     </table>
 
 
-  
-    </div>
-
     <script>
       
         let countryData; // Declare globally
@@ -636,55 +636,29 @@
             })
             .catch(error => console.error('Error loading data:', error));
 
-     function showInfo(country) {
-        const infoDiv = document.getElementById('info');
-        if (countryData[country]) {
-            const data = countryData[country];
-            const maxWidth = 300; // Maximum width for the bar
+    function showInfo(country) {
+            const infoDiv = document.getElementById('info');
+            if (countryData[country]) {
+                const data = countryData[country];
 
-            // Convert travel time from hours to pixels for bar widths
-            const travelTimeToPixels = (time) => {
-                const hours = parseInt(time.split(' ')[0], 10); // Extract number of hours
-                return (hours / 24) * maxWidth; // Convert hours to a pixel width based on a 24-hour scale
-            };
+                let safetyClass = 'safety-low';
+                if (data.safety_rating === 'High') safetyClass = 'safety-high';
+                else if (data.safety_rating === 'Medium') safetyClass = 'safety-medium';
 
-            const seattleWidth = travelTimeToPixels(data.travel_time_seattle);
-            const corkWidth = travelTimeToPixels(data.travel_time_cork);
+                const pointsOfInterestList = data.points_of_interest.map(point => `<li>${point}</li>`).join('');
 
-            // Determine safety rating color
-            let safetyClass = 'safety-low';
-            if (data.safety_rating === 'High') {
-                safetyClass = 'safety-high';
-            } else if (data.safety_rating === 'Medium') {
-                safetyClass = 'safety-medium';
+                infoDiv.innerHTML = `
+                    <div style="font-size: 24px; font-weight: bold;">You clicked on ${country}!</div><br>
+                    <strong>Safety Rating:</strong> ${data.safety_rating}<br>
+                    <strong>Travel Time from Seattle:</strong> ${data.travel_time_seattle}<br>
+                    <strong>Travel Time from Cork:</strong> ${data.travel_time_cork}<br>
+                    <strong>Points of Interest:</strong> <ul>${pointsOfInterestList}</ul>
+                    <strong>First time visiting?</strong> ${data.traveled_before}
+                `;
+            } else {
+                infoDiv.innerHTML = `<strong>No data available for ${country}</strong>`;
             }
-
-            // Determine the icon based on travel history
-            const icon = data.traveled_before === 'yes' ? 'old_icon.png' : 'new_icon.png';
-
-            // Format points of interest as bullet points
-            const pointsOfInterestList = data.points_of_interest.map(point => `<li>${point}</li>`).join('');
-
-            // Display country information
-            infoDiv.innerHTML = `
-                <div style="font-size: 24px; font-weight: bold;">You clicked on ${country}!</div><br>
-                <div class="data-row">
-                    <span class="safety-rating ${safetyClass}"></span>
-                    <strong>Safety Rating:</strong> ${data.safety_rating}
-                </div>
-                <div class="data-row"><strong>Travel Time from Seattle:</strong> ${data.travel_time_seattle}</div>
-                <div style="width: ${seattleWidth}px; height: 30px; background-color: #4CAF50; margin: 5px; display: inline-block;" title="${data.travel_time_seattle}"></div>
-                <div class="data-row"><strong>Travel Time from Cork:</strong> ${data.travel_time_cork}</div>
-                <div style="width: ${corkWidth}px; height: 30px; background-color: #2196F3; margin: 5px; display: inline-block;" title="${data.travel_time_cork}"></div>
-                <div class="data-row"><img src="point_of_interest.jpg" class="large-icon" alt="Interest Icon" style="width: 50px; height: 50px;"><strong>Points of Interest:</strong> 
-                    <ul>${pointsOfInterestList}</ul>
-                </div>
-                <div class="data-row"><img src="${icon}" class="icon" alt="Visited Icon"> <strong>First time visting? </strong> ${data.traveled_before}</div>
-            `;
-        } else {
-            infoDiv.innerHTML = `<strong>No data available for ${country}</strong>`;
         }
-    }
     
     function handleClick(event) {
         const target = event.target;
@@ -694,6 +668,11 @@
         }
     }
     document.getElementById('map').addEventListener('click', handleClick);
+
+         function filterTable() {
+            const searchValue = document.getElementById('search').value.toLowerCase();
+            const safetyFilter = document.getElementById('safety-filter').value;
+           
 </script>
 
 </body>
