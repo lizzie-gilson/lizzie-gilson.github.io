@@ -29,34 +29,84 @@
 
         /* Container for the map */
         #map {
-            width: 90%;  /* Adjust the width to fit nicely on different screens */
-            height: 900px; /* Height of the map container */
+            width: 150%;  /* Adjust the width to fit nicely on different screens */
+            height: auto; /* Height will adjust based on SVG */
             margin: 0 auto;
             border: 2px solid #333; /* Optional: Add a border around the map */
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a more polished look */
             background-color: #ffffff; /* Ensure the background is white */
         }
 
-        /* Center content vertically and horizontally */
-        .container {
-            text-align: center;
+        /* Style for country */
+        .country {
+            fill: #d9d9d9; /* Default fill color */
+            cursor: pointer; /* Change cursor on hover */
+            transition: fill 0.3s; /* Smooth color transition */
+        }
+
+        /* Hover effect for countries */
+        .country:hover {
+            fill: #b3b3b3; /* Color on hover */
+        }
+
+        /* Styling for country info */
+        #info {
+            margin-top: 20px;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            text-align: left;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Interactive World Map!5</h1>
+        <h1>Interactive World Map</h1>
         <!-- Container for the map -->
-        <div id="map"></div>
+        <svg id="map" viewBox="0 0 800 400">
+            <!-- Example of a simple country shape (rectangle) for demonstration -->
+            <g class="country" id="burundi" onclick="showInfo('Burundi')">
+                <rect x="350" y="200" width="40" height="30"></rect>
+            </g>
+            <g class="country" id="canada" onclick="showInfo('Canada')">
+                <rect x="50" y="50" width="50" height="40"></rect>
+            </g>
+            <!-- Add more country shapes here -->
+        </svg>
+
+        <!-- Container to display country information -->
+        <div id="info"></div>
     </div>
 
-    <script type="text/javascript" src="https://lizzie-gilson.github.io/mapdata.js"></script>		
-    <script type="text/javascript" src="https://lizzie-gilson.github.io/worldmap.js"></script>
-
     <script>
-        // Initialize the world map
-        simplemaps_worldmap.load();
+        // Load country data from the JSON file
+        let countryData = {};
+
+        fetch('countriesData.json')
+            .then(response => response.json())
+            .then(data => {
+                countryData = data; // Store the fetched data in a variable
+            })
+            .catch(error => console.error('Error loading data:', error));
+
+        function showInfo(country) {
+            if (countryData[country]) {
+                const infoDiv = document.getElementById('info');
+                const data = countryData[country];
+                // Display country information
+                infoDiv.innerHTML = `
+                    <strong>${country}</strong><br>
+                    Capital: ${data.capital}<br>
+                    Population: ${data.population}<br>
+                    Area: ${data.area}
+                `;
+            } else {
+                alert("No data available for " + country);
+            }
+        }
     </script>
 
 </body>
