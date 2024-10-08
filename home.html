@@ -76,6 +76,40 @@
         .country:hover {
             fill: #b3b3b3; /* Color on hover */
         }
+        
+      /* Data table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        th, td {
+            text-align: left;
+        }
+
+        /* Filter and search bar styles */
+        .filter-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        input[type="text"], select {
+            padding: 8px;
+            margin: 10px;
+            width: 200px;
+        }
+        
         .ocean {
             fill: lightblue; /* Ocean color */
         }
@@ -124,7 +158,7 @@
 <body>
 
     <div class="title-container">
-        <h1>Interactive World Map!22</h1>
+        <h1>Interactive World Map!23</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -556,6 +590,38 @@
         <div id="info">
             <strong>Select a country to see information here</strong>
         </div>
+         <!-- Filters and search box -->
+    <div class="filter-container">
+        <input type="text" id="search" placeholder="Search country..." oninput="filterTable()">
+        <select id="safety-filter" onchange="filterTable()">
+            <option value="">Filter by Safety</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        <select id="visited-filter" onchange="filterTable()">
+            <option value="">Visited before?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+
+    <!-- Data table -->
+    <table id="countries-table">
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Safety Rating</th>
+                <th>Travel Time from Seattle</th>
+                <th>Travel Time from Cork</th>
+                <th>Visited Before</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Table data will be populated here -->
+        </tbody>
+    </table>
+
 
   
     </div>
