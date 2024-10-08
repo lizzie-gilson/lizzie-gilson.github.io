@@ -1,0 +1,289 @@
+{
+    "Japan": {
+        "safety_rating": "High",
+        "travel_time_seattle": "10 hours",
+        "travel_time_cork": "17 hours",
+        "points_of_interest": ["Tokyo Tower", "Kyoto Temples", "Mount Fuji"],
+        "traveled_before": "no"
+    },
+    "Italy": {
+        "safety_rating": "High",
+        "travel_time_seattle": "12 hours",
+        "travel_time_cork": "2 hours",
+        "points_of_interest": ["Colosseum", "Venice Canals", "Leaning Tower of Pisa"],
+        "traveled_before": "no"
+    },
+    "France": {
+        "safety_rating": "High",
+        "travel_time_seattle": "10 hours",
+        "travel_time_cork": "1.5 hours",
+        "points_of_interest": ["Eiffel Tower", "Louvre Museum", "Versailles"],
+        "traveled_before": "no"
+    },
+    "New Zealand": {
+        "safety_rating": "Very High",
+        "travel_time_seattle": "14 hours",
+        "travel_time_cork": "23 hours",
+        "points_of_interest": ["Milford Sound", "Rotorua", "Queenstown"],
+        "traveled_before": "no"
+    },
+    "Australia": {
+        "safety_rating": "High",
+        "travel_time_seattle": "16 hours",
+        "travel_time_cork": "21 hours",
+        "points_of_interest": ["Sydney Opera House", "Great Barrier Reef", "Uluru"],
+        "traveled_before": "no"
+    },
+    "Spain": {
+        "safety_rating": "High",
+        "travel_time_seattle": "11 hours",
+        "travel_time_cork": "2.5 hours",
+        "points_of_interest": ["Sagrada Familia", "Alhambra", "Park Güell"],
+        "traveled_before": "no"
+    },
+    "Switzerland": {
+        "safety_rating": "Very High",
+        "travel_time_seattle": "11 hours",
+        "travel_time_cork": "1.5 hours",
+        "points_of_interest": ["Matterhorn", "Lake Geneva", "Lucerne"],
+        "traveled_before": "no"
+    },
+    "Iceland": {
+        "safety_rating": "Very High",
+        "travel_time_seattle": "8 hours",
+        "travel_time_cork": "3 hours",
+        "points_of_interest": ["Blue Lagoon", "Golden Circle", "Reykjavik"],
+        "traveled_before": "no"
+    },
+    "Portugal": {
+        "safety_rating": "High",
+        "travel_time_seattle": "11 hours",
+        "travel_time_cork": "2 hours",
+        "points_of_interest": ["Lisbon", "Porto", "Algarve"],
+        "traveled_before": "no"
+    },
+    "Greece": {
+        "safety_rating": "High",
+        "travel_time_seattle": "14 hours",
+        "travel_time_cork": "3 hours",
+        "points_of_interest": ["Acropolis", "Santorini", "Meteora"],
+        "traveled_before": "no"
+    },
+    "Thailand": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "18 hours",
+        "travel_time_cork": "12 hours",
+        "points_of_interest": ["Bangkok", "Phuket", "Chiang Mai"],
+        "traveled_before": "no"
+    },
+    "Mexico": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "5 hours",
+        "travel_time_cork": "15 hours",
+        "points_of_interest": ["Chichen Itza", "Cancun", "Mexico City"],
+        "traveled_before": "no"
+    },
+    "Canada": {
+        "safety_rating": "High",
+        "travel_time_seattle": "1.5 hours",
+        "travel_time_cork": "7 hours",
+        "points_of_interest": ["Niagara Falls", "Banff National Park", "Vancouver"],
+        "traveled_before": "no"
+    },
+    "South Korea": {
+        "safety_rating": "High",
+        "travel_time_seattle": "10 hours",
+        "travel_time_cork": "16 hours",
+        "points_of_interest": ["Seoul", "Jeju Island", "Gyeongbokgung Palace"],
+        "traveled_before": "no"
+    },
+    "Costa Rica": {
+        "safety_rating": "High",
+        "travel_time_seattle": "6 hours",
+        "travel_time_cork": "14 hours",
+        "points_of_interest": ["Arenal Volcano", "Monteverde", "Manuel Antonio"],
+        "traveled_before": "no"
+    },
+    "Netherlands": {
+        "safety_rating": "Very High",
+        "travel_time_seattle": "11 hours",
+        "travel_time_cork": "1.5 hours",
+        "points_of_interest": ["Amsterdam Canals", "Rijksmuseum", "Keukenhof"],
+        "traveled_before": "no"
+    },
+    "Norway": {
+        "safety_rating": "Very High",
+        "travel_time_seattle": "12 hours",
+        "travel_time_cork": "3 hours",
+        "points_of_interest": ["Fjords", "Oslo", "Northern Lights"],
+        "traveled_before": "no"
+    },
+    "Ireland": {
+        "safety_rating": "Very High",
+        "travel_time_seattle": "10 hours",
+        "travel_time_cork": "0.5 hours",
+        "points_of_interest": ["Cliffs of Moher", "Dublin", "Blarney Castle"],
+        "traveled_before": "no"
+    },
+    "Finland": {
+        "safety_rating": "High",
+        "travel_time_seattle": "12 hours",
+        "travel_time_cork": "3 hours",
+        "points_of_interest": ["Helsinki", "Lapland", "Santa Claus Village"],
+        "traveled_before": "no"
+    },
+    "Belgium": {
+        "safety_rating": "High",
+        "travel_time_seattle": "11 hours",
+        "travel_time_cork": "1.5 hours",
+        "points_of_interest": ["Brussels", "Bruges", "Antwerp"],
+        "traveled_before": "no"
+    },
+    "Czech Republic": {
+        "safety_rating": "High",
+        "travel_time_seattle": "11 hours",
+        "travel_time_cork": "2 hours",
+        "points_of_interest": ["Prague", "Cesky Krumlov", "Karlovy Vary"],
+        "traveled_before": "no"
+    },
+    "Austria": {
+        "safety_rating": "High",
+        "travel_time_seattle": "11 hours",
+        "travel_time_cork": "2.5 hours",
+        "points_of_interest": ["Vienna", "Salzburg", "Innsbruck"],
+        "traveled_before": "no"
+    },
+    "Turkey": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "14 hours",
+        "travel_time_cork": "4 hours",
+        "points_of_interest": ["Istanbul", "Cappadocia", "Pamukkale"],
+        "traveled_before": "no"
+    },
+    "United Kingdom": {
+        "safety_rating": "High",
+        "travel_time_seattle": "10 hours",
+        "travel_time_cork": "1 hour",
+        "points_of_interest": ["London", "Edinburgh", "Stonehenge"],
+        "traveled_before": "no"
+    },
+    "United States": {
+        "safety_rating": "High",
+        "travel_time_seattle": "0.5 hours",
+        "travel_time_cork": "10 hours",
+        "points_of_interest": ["Grand Canyon", "Yellowstone", "New York City"],
+        "traveled_before": "no"
+    },
+    "Singapore": {
+        "safety_rating": "Very High",
+        "travel_time_seattle": "18 hours",
+        "travel_time_cork": "12 hours",
+        "points_of_interest": ["Marina Bay Sands", "Gardens by the Bay", "Sentosa Island"],
+        "traveled_before": "no"
+    },
+    "Vietnam": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "20 hours",
+        "travel_time_cork": "13 hours",
+        "points_of_interest": ["Halong Bay", "Hanoi", "Ho Chi Minh City"],
+        "traveled_before": "no"
+    },
+    "Malaysia": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "20 hours",
+        "travel_time_cork": "15 hours",
+        "points_of_interest": ["Petronas Towers", "Langkawi", "Borneo"],
+        "traveled_before": "no"
+    },
+    "South Africa": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "22 hours",
+        "travel_time_cork": "12 hours",
+        "points_of_interest": ["Table Mountain", "Kruger National Park", "Cape Town"],
+        "traveled_before": "no"
+    },
+    "Chile": {
+        "safety_rating": "High",
+        "travel_time_seattle": "17 hours",
+        "travel_time_cork": "18 hours",
+        "points_of_interest": ["Atacama Desert", "Santiago", "Patagonia"],
+        "traveled_before": "no"
+    },
+    "Egypt": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "18 hours",
+        "travel_time_cork": "17 hours",
+        "points_of_interest": ["Pyramids of Giza", "Luxor", "Nile River"],
+        "traveled_before": "no"
+    },
+    "Peru": {
+        "safety_rating": "High",
+        "travel_time_seattle": "14 hours",
+        "travel_time_cork": "20 hours",
+        "points_of_interest": ["Machu Picchu", "Cusco", "Nazca Lines"],
+        "traveled_before": "no"
+    },
+    "Argentina": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "19 hours",
+        "travel_time_cork": "21 hours",
+        "points_of_interest": ["Buenos Aires", "Iguazu Falls", "Patagonia"],
+        "traveled_before": "no"
+    },
+    "Brazil": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "12 hours",
+        "travel_time_cork": "16 hours",
+        "points_of_interest": ["Rio de Janeiro", "Amazon Rainforest", "Sao Paulo"],
+        "traveled_before": "no"
+    },
+    "Uruguay": {
+        "safety_rating": "High",
+        "travel_time_seattle": "14 hours",
+        "travel_time_cork": "17 hours",
+        "points_of_interest": ["Montevideo", "Punta del Este", "Colonia del Sacramento"],
+        "traveled_before": "no"
+    },
+    "Colombia": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "10 hours",
+        "travel_time_cork": "14 hours",
+        "points_of_interest": ["Cartagena", "Bogotá", "Medellín"],
+        "traveled_before": "no"
+    },
+    "Dominican Republic": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "7 hours",
+        "travel_time_cork": "15 hours",
+        "points_of_interest": ["Punta Cana", "Santo Domingo", "Samana"],
+        "traveled_before": "no"
+    },
+    "Jamaica": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "8 hours",
+        "travel_time_cork": "14 hours",
+        "points_of_interest": ["Montego Bay", "Negril", "Ocho Rios"],
+        "traveled_before": "no"
+    },
+    "Barbados": {
+        "safety_rating": "High",
+        "travel_time_seattle": "10 hours",
+        "travel_time_cork": "12 hours",
+        "points_of_interest": ["Bridgetown", "Oistins", "St. Nicholas Abbey"],
+        "traveled_before": "no"
+    },
+    "Honduras": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "9 hours",
+        "travel_time_cork": "15 hours",
+        "points_of_interest": ["Copán", "Roatan", "Tegucigalpa"],
+        "traveled_before": "no"
+    },
+    "Panama": {
+        "safety_rating": "Medium",
+        "travel_time_seattle": "9 hours",
+        "travel_time_cork": "14 hours",
+        "points_of_interest": ["Panama Canal", "Casco Viejo", "Bocas del Toro"],
+        "traveled_before": "no"
+    }
+}
