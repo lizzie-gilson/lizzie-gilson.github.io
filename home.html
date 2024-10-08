@@ -159,7 +159,7 @@
 <body>
 
     <div class="title-container">
-        <h1>Interactive World Map!27</h1>
+        <h1>Interactive World Map!28</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -636,19 +636,20 @@
                 filterTable();
             })
             .catch(error => console.error('Error loading data:', error));
-
-    function showInfo(country) {
-            let seattleWidth = data.travel_time_seattle * 10; // Adjust the multiplier based on how you want the width to be
-            let corkWidth = data.travel_time_cork * 10;
+        
+        
+        function showInfo(country) {
             const infoDiv = document.getElementById('info');
             if (countryData[country]) {
                 const data = countryData[country];
-
+                let seattleWidth = data.travel_time_seattle * 10; // Moved inside where 'data' is defined
+                let corkWidth = data.travel_time_cork * 10;
+    
                 let safetyClass = 'safety-low';
                 if (data.safety_rating === 'High') safetyClass = 'safety-high';
                 else if (data.safety_rating === 'Medium') safetyClass = 'safety-medium';
 
-                const pointsOfInterestList = data.points_of_interest.map(point => `<li>${point}</li>`).join('');
+            const pointsOfInterestList = data.points_of_interest.map(point => `<li>${point}</li>`).join('');
 
                 infoDiv.innerHTML = `
                    <div style="font-size: 24px; font-weight: bold;">You clicked on ${country}!</div><br>
