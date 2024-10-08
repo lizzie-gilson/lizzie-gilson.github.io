@@ -159,7 +159,7 @@
 <body>
 
     <div class="title-container">
-        <h1>Interactive World Map!26</h1>
+        <h1>Interactive World Map!27</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -633,6 +633,7 @@
             .then(response => response.json())
             .then(data => {
                 countryData = data; // Store the fetched data in a variable
+                filterTable();
             })
             .catch(error => console.error('Error loading data:', error));
 
@@ -660,7 +661,7 @@
                 <div class="data-row"><strong>Points of Interest:</strong> <img src="point_of_interest.jpg" class="large-icon" alt="Interest Icon" style="width: 50px; height: 50px;"> 
                     <ul>${pointsOfInterestList}</ul>
                 </div>
-                <div class="data-row"><img src="${icon}" class="icon" alt="Visited Icon"> <strong>First time visiting? </strong> ${data.traveled_before}</div>
+                <div class="data-row"><img src="${data.traveled_before === 'Yes' ? 'visited_icon.jpg' : 'not_visited_icon.jpg'}" class="icon" alt="Visited Icon"> <strong>First time visiting? </strong> ${data.traveled_before}</div>
             `;
             } else {
                 infoDiv.innerHTML = `<strong>No data available for ${country}</strong>`;
@@ -679,44 +680,46 @@
     document.getElementById('map').addEventListener('click', handleClick);
 
    function filterTable() {
-            const searchInput = document.getElementById('search').value.toLowerCase();
-            const safetyFilter = document.getElementById('safety-filter').value;
-            const visitedFilter = document.getElementById('visited-filter').value;
+        const searchInput = document.getElementById('search').value.toLowerCase();
+        const safetyFilter = document.getElementById('safety-filter').value;
+        const visitedFilter = document.getElementById('visited-filter').value;
+        const seattleTimeFilter = document.getElementById('seattle-time-filter').value;
+        const corkTimeFilter = document.getElementById('cork-time-filter').value;
 
-            const tableBody = document.getElementById('table-body');
-            tableBody.innerHTML = ''; // Clear previous results
+        const tableBody = document.getElementById('table-body');
+        tableBody.innerHTML = ''; // Clear previous results
 
-            // Filter the countryData based on input values
-            Object.keys(countryData).forEach(country => {
-                const data = countryData[country];
-                const matchesSearch = country.toLowerCase().includes(searchInput);
-                const matchesSafety = safetyFilter ? data.safety_rating === safetyFilter : true;
-                const matchesVisited = visitedFilter ? data.traveled_before === visitedFilter : true;
+        // Filter the countryData based on input values
+        Object.keys(countryData).forEach(country => {
+            const data = countryData[country];
+            const matchesSearch = country.toLowerCase().includes(searchInput);
+            const matchesSafety = safetyFilter ? data.safety_rating === safetyFilter : true;
+            const matchesVisited = visitedFilter ? data.traveled_before === visitedFilter : true;
+            const matchesSeattleTime = seattleTimeFilter ? data.travel_time_seattle <= seattleTimeFilter : true;
+            const matchesCorkTime = corkTimeFilter ? data.travel_time_cork <= corkTimeFilter : true;
 
-                if (matchesSearch && matchesSafety && matchesVisited) {
-                    const row = document.createElement('tr');
-                    row.innerHTML = `
-                        <td onclick="showInfo('${country}')">${country}</td>
-                        <td>${data.safety_rating}</td>
-                        <td>${data.travel_time_seattle}</td>
-                        <td>${data.travel_time_cork}</td>
-                        <td>${data.traveled_before}</td>
-                    `;
-                    tableBody.appendChild(row);
-                }
-            });
-        }
-
-        // Adding click event listener to country paths
-        const countries = document.querySelectorAll('.country');
-        countries.forEach(country => {
-            country.addEventListener('click', () => {
-                const countryName = country.getAttribute('data-name');
-                showInfo(countryName);
-            });
+            if (matchesSearch && matchesSafety && matchesVisited && matchesSeattleTime && matchesCorkTime) {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td onclick="showInfo('${country}')">${country}</td>
+                    <td>${data.safety_rating}</td>
+                    <td>${data.travel_time_seattle}</td>
+                    <td>${data.travel_time_cork}</td>
+                    <td>${data.traveled_before}</td>
+                `;
+                tableBody.appendChild(row);
+            }
         });
-           
-</script>
+    }
 
+    // Adding click event listener to country paths
+    const countries = document.querySelectorAll('.country');
+    countries.forEach(country => {
+        country.addEventListener('click', () => {
+            const countryName = country.getAttribute('data-name');
+            showInfo(countryName);
+        });
+    });
+</script>
 </body>
 </html>
