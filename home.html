@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive World Map</title>
+    <!-- Add any necessary CSS here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            width: 100%;
+            height: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Interactive World Map</h1>
+    <!-- Container for the map -->
+    <div id="map"></div>
+
+    <!-- Include the world map JS -->
+    <script src="map_data.js"></script>
+    <script src="https://simplemaps.com/resources/worldmap.js"></script>
+
+    <script>
+        // Initialize the world map
+        simplemaps_worldmap.load();
+    </script>
+</body>
+</html>
