@@ -160,7 +160,7 @@
  
 
     <div class="title-container">
-        <h1>Interactive World Map!31</h1>
+        <h1>Interactive World Map!32</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -692,36 +692,25 @@
   
     document.getElementById('map').addEventListener('click', handleClick);
 
-   function filterTable() {
-        const searchInput = document.getElementById('search').value.toLowerCase();
-        const safetyFilter = document.getElementById('safety-filter').value;
-        const visitedFilter = document.getElementById('visited-filter').value;
-        // const seattleTimeFilter = document.getElementById('seattle-time-filter').value;
-        // const corkTimeFilter = document.getElementById('cork-time-filter').value;
+  function filterTable() {
+    const countryArray = Object.entries(countryData);
+    const filterValue = document.getElementById('filterInput').value.toLowerCase();
 
-        const tableBody = document.getElementById('table-body');
-        tableBody.innerHTML = ''; // Clear previous results
+    const filteredCountries = countryArray.filter(([countryName, details]) => {
+        // Example filter: check if safety rating matches filterValue
+        return details.safety_rating.toLowerCase().includes(filterValue);
+    });
 
-        // Filter the countryData based on input values
-        countryData.forEach(country => {
-        const countryName = country.name.toLowerCase();
-        const matchesSearch = !searchInput || countryName.includes(searchInput);
-        const matchesSafety = !safetyFilter || country.safety_rating === safetyFilter;
-        const matchesVisited = !visitedFilter || country.traveled_before === visitedFilter;
-
-        if (matchesSearch && matchesSafety && matchesVisited) {
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${country.name}</td>
-                <td>${country.safety_rating}</td>
-                <td>${country.travel_time_seattle}</td>
-                <td>${country.travel_time_cork}</td>
-                <td>${country.traveled_before}</td>
-            `;
-            tableBody.appendChild(row);
-        }
-        });
-    }
+    filteredCountries.forEach(([countryName, details]) => {
+        // Display the filtered results
+        console.log(`Country: ${countryName}`);
+        console.log(`Safety Rating: ${details.safety_rating}`);
+        console.log(`Travel Time from Seattle: ${details.travel_time_seattle}`);
+        console.log(`Travel Time from Cork: ${details.travel_time_cork}`);
+        console.log(`Points of Interest: ${details.points_of_interest.join(', ')}`);
+        console.log(`Traveled Before: ${details.traveled_before}`);
+    });
+}
      function searchCountry() {
         const searchQuery = document.getElementById('country-search').value.toLowerCase();
         const countries = document.querySelectorAll('.country');
