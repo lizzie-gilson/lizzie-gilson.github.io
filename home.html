@@ -123,7 +123,7 @@
 <body>
 
     <div class="title-container">
-        <h1>Interactive World Map!99</h1>
+        <h1>Interactive World Map!19</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -138,7 +138,7 @@
                     fill: lightblue;
                 }
             </style>
-            <rect width="2000" height="1500" class="ocean"/>
+            <rect width="40" height="10" class="ocean"/>
             <!-- Example of country shapes using paths -->
              <path d="M1383 261.6l1.5 1.8-2.9 0.8-2.4 1.1-5.9 0.8-5.3 1.3-2.4 2.8 1.9 2.7 1.4 3.2-2 2.7 0.8 2.5-0.9 2.3-5.2-0.2 3.1 4.2-3.1 1.7-1.4 3.8 1.1 3.9-1.8 1.8-2.1-0.6-4 0.9-0.2 1.7-4.1 0-2.3 3.7 0.8 5.4-6.6 2.7-3.9-0.6-0.9 1.4-3.4-0.8-5.3 1-9.6-3.3 3.9-5.8-1.1-4.1-4.3-1.1-1.2-4.1-2.7-5.1 1.6-3.5-2.5-1 0.5-4.7 0.6-8 5.9 2.5 3.9-0.9 0.4-2.9 4-0.9 2.6-2-0.2-5.1 4.2-1.3 0.3-2.2 2.9 1.7 1.6 0.2 3 0 4.3 1.4 1.8 0.7 3.4-2 2.1 1.2 0.9-2.9 3.2 0.1 0.6-0.9-0.2-2.6 1.7-2.2 3.3 1.4-0.1 2 1.7 0.3 0.9 5.4 2.7 2.1 1.5-1.4 2.2-0.6 2.5-2.9 3.8 0.5 5.4 0z"
               data-name="Afghanistan" class="country"/>
@@ -569,20 +569,20 @@
             })
             .catch(error => console.error('Error loading data:', error));
 
-       function showInfo(country) {
+     function showInfo(country) {
         const infoDiv = document.getElementById('info');
         if (countryData[country]) {
             const data = countryData[country];
-            const maxHeight = 500; // Maximum height for the bar
+            const maxWidth = 500; // Maximum width for the bar
 
-            // Convert travel time from hours to pixels for bar heights
+            // Convert travel time from hours to pixels for bar widths
             const travelTimeToPixels = (time) => {
                 const hours = parseInt(time.split(' ')[0], 10); // Extract number of hours
-                return (hours / 24) * maxHeight; // Convert hours to a pixel height based on a 24-hour scale
+                return (hours / 24) * maxWidth; // Convert hours to a pixel width based on a 24-hour scale
             };
 
-            const seattleHeight = travelTimeToPixels(data.travel_time_seattle);
-            const corkHeight = travelTimeToPixels(data.travel_time_cork);
+            const seattleWidth = travelTimeToPixels(data.travel_time_seattle);
+            const corkWidth = travelTimeToPixels(data.travel_time_cork);
 
             // Determine safety rating color
             let safetyClass = 'safety-low';
@@ -595,24 +595,30 @@
             // Determine the icon based on travel history
             const icon = data.traveled_before === 'yes' ? 'old_icon.png' : 'new_icon.png';
 
+            // Format points of interest as bullet points
+            const pointsOfInterestList = data.points_of_interest.map(point => `<li>${point}</li>`).join('');
+
             // Display country information
             infoDiv.innerHTML = `
                 <div style="font-size: 24px; font-weight: bold;">You clicked on ${country}!</div><br>
                 <div class="data-row">
                     <span class="safety-rating ${safetyClass}"></span>
-                    Safety Rating: ${data.safety_rating}
+                    <strong>Safety Rating:</strong> ${data.safety_rating}
                 </div>
-                <div class="data-row">Travel Time from Seattle: ${data.travel_time_seattle}</div>
-                <div style="height: ${seattleHeight}px; width: 30px; background-color: #4CAF50; margin: 5px; display: inline-block;" title="${data.travel_time_seattle}"></div>
-                <div class="data-row">Travel Time from Cork: ${data.travel_time_cork}</div>
-                <div style="height: ${corkHeight}px; width: 30px; background-color: #2196F3; margin: 5px; display: inline-block;" title="${data.travel_time_cork}"></div>
-                <div class="data-row">Points of Interest: <img src="point_of_interest.jpg" class="large-icon" alt="Interest Icon" style="width: 50px; height: 50px;"> ${data.points_of_interest.join(', ')}</div>
-                <div class="data-row">Have you been there before: <img src="${icon}" class="icon" alt="Visited Icon"> ${data.traveled_before}</div>
+                <div class="data-row"><strong>Travel Time from Seattle:</strong> ${data.travel_time_seattle}</div>
+                <div style="width: ${seattleWidth}px; height: 30px; background-color: #4CAF50; margin: 5px; display: inline-block;" title="${data.travel_time_seattle}"></div>
+                <div class="data-row"><strong>Travel Time from Cork:</strong> ${data.travel_time_cork}</div>
+                <div style="width: ${corkWidth}px; height: 30px; background-color: #2196F3; margin: 5px; display: inline-block;" title="${data.travel_time_cork}"></div>
+                <div class="data-row"><strong>Points of Interest:</strong> <img src="point_of_interest.jpg" class="large-icon" alt="Interest Icon" style="width: 50px; height: 50px;"> 
+                    <ul>${pointsOfInterestList}</ul>
+                </div>
+                <div class="data-row"><img src="${icon}" class="icon" alt="Visited Icon"> <strong>Have you been there before:</strong> ${data.traveled_before}</div>
             `;
         } else {
             infoDiv.innerHTML = `<strong>No data available for ${country}</strong>`;
         }
     }
+    
     function handleClick(event) {
         const target = event.target;
         if (target.classList.contains('country')) {
