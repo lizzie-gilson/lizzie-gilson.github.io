@@ -21,8 +21,11 @@
         }
         /* Container for the map and info */
         .container {
-            display: flex; /* Flexbox to position items side by side */
-            align-items: flex-start; /* Align items at the start */
+            display: flex;
+            align-items: flex-start;
+            width: 80%; /* Set a width for the entire container */
+            max-width: 1200px; /* Maximum width for larger screens */
+            margin: 0 auto; /* Center the container */
         }
         /* Title styling */
         h1 {
@@ -33,12 +36,13 @@
         }
 
         /* Container for the map */
-        #map {
-            width: 60%; /* Adjust the width of the map */
-            height: auto; /* Height will adjust based on SVG */
-            margin-right: 20px; /* Space between map and info */
-            border: 2px solid #333; /* Optional: Add a border around the map */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+       #map {
+            flex: 1; /* Allow the map to take remaining space */
+            height: 600px; /* Set a specific height for the map */
+            margin-right: 20px;
+            border: 2px solid #333;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Prevent overflow of map content */
         }
         /* Info box styling */
         #info {
@@ -82,7 +86,7 @@
 <body>
 
     <div class="container">
-        <h1>Interactive World Map!5</h1>
+        <h1>Interactive World Map!6</h1>
         <!-- Container for the map -->
         <svg id="map" viewBox="0 0 2000 1500" onclick="handleClick(event)">
             <style>
@@ -517,15 +521,15 @@
     </div>
 
     <script>
-        // Load country data from the JSON file
-        let countryData = {};
-
+      
+        let countryData; // Declare globally
         fetch('countriesData.json')
             .then(response => response.json())
             .then(data => {
                 countryData = data; // Store the fetched data in a variable
             })
             .catch(error => console.error('Error loading data:', error));
+
         function showInfo(country) {
             const infoDiv = document.getElementById('info');
             if (countryData[country]) {
