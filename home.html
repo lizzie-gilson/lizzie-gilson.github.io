@@ -123,11 +123,11 @@
 <body>
 
     <div class="title-container">
-        <h1>Interactive World Map!9</h1>
+        <h1>Interactive World Map!77</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
-        <svg id="map" viewBox="width: 50vw; height: 50vh;" onclick="handleClick(event)">
+        <svg id="map" viewBox="width: 20vw; height: 10vh;" onclick="handleClick(event)">
             <style>
                 .country {
                     fill: lightgreen;
@@ -590,8 +590,8 @@
                     </div>
                     <div class="data-row">Travel Time from Seattle: ${data.travel_time_seattle}</div>
                     <div class="data-row">Travel Time from Cork: ${data.travel_time_cork}</div>
-                    <div class="data-row">Points of Interest: <img src="icon-interest.png" class="icon" alt="Interest Icon"> ${data.points_of_interest}</div>
-                    <div class="data-row">Have you been there before: <img src="icon-visited.png" class="icon" alt="Visited Icon"> ${data.traveled_before}</div>
+                    <div class="data-row">Points of Interest: <img src="point_of_interest.jpg" class="icon" alt="Interest Icon"> ${data.points_of_interest}</div>
+                    <div class="data-row">Have you been there before: <img src="new_icon.png" class="icon" alt="Visited Icon"> ${data.traveled_before}</div>
                 `;
             } else {
                 infoDiv.innerHTML = `<strong>No data available for ${country}</strong>`;
