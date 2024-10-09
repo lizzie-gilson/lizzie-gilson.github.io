@@ -160,7 +160,7 @@
  
 
     <div class="title-container">
-        <h1>Interactive World Map!32</h1>
+        <h1>Interactive World Map!33</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -692,23 +692,28 @@
   
     document.getElementById('map').addEventListener('click', handleClick);
 
-  function filterTable() {
+ function filterTable() {
     const countryArray = Object.entries(countryData);
-    const filterValue = document.getElementById('filterInput').value.toLowerCase();
+    const filterValue = document.getElementById('search').value.toLowerCase(); // Change 'filterInput' to 'search'
 
     const filteredCountries = countryArray.filter(([countryName, details]) => {
-        // Example filter: check if safety rating matches filterValue
-        return details.safety_rating.toLowerCase().includes(filterValue);
+        return countryName.toLowerCase().includes(filterValue); // Match country name
     });
 
+    const tableBody = document.getElementById('table-body');
+    tableBody.innerHTML = ''; // Clear the table before inserting new rows
+
     filteredCountries.forEach(([countryName, details]) => {
-        // Display the filtered results
-        console.log(`Country: ${countryName}`);
-        console.log(`Safety Rating: ${details.safety_rating}`);
-        console.log(`Travel Time from Seattle: ${details.travel_time_seattle}`);
-        console.log(`Travel Time from Cork: ${details.travel_time_cork}`);
-        console.log(`Points of Interest: ${details.points_of_interest.join(', ')}`);
-        console.log(`Traveled Before: ${details.traveled_before}`);
+        const row = `
+            <tr>
+                <td>${countryName}</td>
+                <td>${details.safety_rating}</td>
+                <td>${details.travel_time_seattle}</td>
+                <td>${details.travel_time_cork}</td>
+                <td>${details.traveled_before}</td>
+            </tr>
+        `;
+        tableBody.insertAdjacentHTML('beforeend', row); // Insert the filtered rows into the table
     });
 }
      function searchCountry() {
@@ -739,7 +744,9 @@
             showInfo(countryName);
         });
     });
-   
+   document.getElementById('search').addEventListener('input', filterTable);
+    document.getElementById('safety-filter').addEventListener('change', filterTable);
+    document.getElementById('visited-filter').addEventListener('change', filterTable);
 
 </script>
 </body>
