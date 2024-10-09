@@ -650,7 +650,7 @@
                  // Convert travel time from hours to pixels for bar widths
                 const travelTimeToPixels = (time) => {
                     const hours = parseInt(time.split(' ')[0], 10); // Extract number of hours
-                    return (hours / 35) * maxWidth; // Convert hours to a pixel width based on a 24-hour scale
+                    return (hours / 45) * maxWidth; // Convert hours to a pixel width based on a 24-hour scale
                 };
                 const seattleWidth =  travelTimeToPixels(data.travel_time_seattle);
                 const corkWidth = travelTimeToPixels(data.travel_time_cork);
