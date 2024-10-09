@@ -160,7 +160,7 @@
  
 
     <div class="title-container">
-        <h1>Interactive World Map!33</h1>
+        <h1>Interactive World Map!34</h1>
     </div>
     <div class="container">
         <!-- Container for the map -->
@@ -692,30 +692,42 @@
   
     document.getElementById('map').addEventListener('click', handleClick);
 
- function filterTable() {
+function filterTable() {
     const countryArray = Object.entries(countryData);
-    const filterValue = document.getElementById('search').value.toLowerCase(); // Change 'filterInput' to 'search'
+    const searchValue = document.getElementById('search').value.toLowerCase(); // Search input
+    const safetyValue = document.getElementById('safety-filter').value; // Safety filter
+    const visitedValue = document.getElementById('visited-filter').value; // Visited filter
 
     const filteredCountries = countryArray.filter(([countryName, details]) => {
-        return countryName.toLowerCase().includes(filterValue); // Match country name
+        // Check if the country name matches the search input
+        const matchesSearch = countryName.toLowerCase().includes(searchValue);
+
+        // Check if safety rating matches the safety filter (if selected)
+        const matchesSafety = !safetyValue || details.safety_rating.toLowerCase() === safetyValue.toLowerCase();
+
+        // Check if visited matches the visited filter (if selected)
+        const matchesVisited = !visitedValue || (visitedValue === 'yes' ? details.traveled_before === 'Yes' : details.traveled_before !== 'Yes');
+
+        return matchesSearch && matchesSafety && matchesVisited; // Return true if all conditions are met
     });
 
+    // Update the table with filtered countries
     const tableBody = document.getElementById('table-body');
-    tableBody.innerHTML = ''; // Clear the table before inserting new rows
+    tableBody.innerHTML = ''; // Clear previous results
 
     filteredCountries.forEach(([countryName, details]) => {
-        const row = `
-            <tr>
-                <td>${countryName}</td>
-                <td>${details.safety_rating}</td>
-                <td>${details.travel_time_seattle}</td>
-                <td>${details.travel_time_cork}</td>
-                <td>${details.traveled_before}</td>
-            </tr>
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${countryName}</td>
+            <td>${details.safety_rating}</td>
+            <td>${details.travel_time_seattle}</td>
+            <td>${details.travel_time_cork}</td>
+            <td>${details.traveled_before}</td>
         `;
-        tableBody.insertAdjacentHTML('beforeend', row); // Insert the filtered rows into the table
+        tableBody.appendChild(row);
     });
 }
+
      function searchCountry() {
         const searchQuery = document.getElementById('country-search').value.toLowerCase();
         const countries = document.querySelectorAll('.country');
