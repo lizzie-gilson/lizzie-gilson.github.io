@@ -1,4 +1,53 @@
 {
+    "Afghanistan": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "19 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Band-e Amir National Park", "Babur's Gardens", "Herat Citadel"],
+    "traveled_before": "no"
+},
+"Albania": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "16 hours",
+    "travel_time_cork": "4 hours",
+    "points_of_interest": ["Berat", "Theth National Park", "Gjirokaster"],
+    "traveled_before": "no"
+},
+"Algeria": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "16 hours",
+    "travel_time_cork": "8 hours",
+    "points_of_interest": ["Algiers", "Tassili n'Ajjer", "Tipaza"],
+    "traveled_before": "no"
+},
+"Andorra": {
+    "safety_rating": "High",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "2 hours",
+    "points_of_interest": ["Vallnord", "Casa de la Vall", "Madriu-Perafita-Claror Valley"],
+    "traveled_before": "no"
+},
+"Angola": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Kalandula Falls", "Luanda", "Kissama National Park"],
+    "traveled_before": "no"
+},
+"Antigua and Barbuda": {
+    "safety_rating": "High",
+    "travel_time_seattle": "12 hours",
+    "travel_time_cork": "11 hours",
+    "points_of_interest": ["Nelson's Dockyard", "Dickenson Bay", "Half Moon Bay"],
+    "traveled_before": "no"
+},
+"Armenia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "9 hours",
+    "points_of_interest": ["Yerevan", "Lake Sevan", "Geghard Monastery"],
+    "traveled_before": "no"
+},
     "Argentina": {
     "safety_rating": "Medium",
     "travel_time_seattle": "15 hours",
@@ -6,11 +55,356 @@
     "points_of_interest": ["Iguazu Falls", "Buenos Aires", "Patagonia"],
     "traveled_before": "no"
 },
+    "Azerbaijan": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "17 hours",
+    "travel_time_cork": "9 hours",
+    "points_of_interest": ["Baku", "Gobustan National Park", "Sheki"],
+    "traveled_before": "no"
+},
+"Bahamas": {
+    "safety_rating": "High",
+    "travel_time_seattle": "10 hours",
+    "travel_time_cork": "12 hours",
+    "points_of_interest": ["Nassau", "Exuma Cays", "Atlantis Paradise Island"],
+    "traveled_before": "no"
+},
+"Bahrain": {
+    "safety_rating": "High",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "10 hours",
+    "points_of_interest": ["Bahrain Fort", "Amwaj Islands", "Tree of Life"],
+    "traveled_before": "no"
+},
+"Bangladesh": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "19 hours",
+    "travel_time_cork": "17 hours",
+    "points_of_interest": ["Dhaka", "Sundarbans", "Cox's Bazar"],
+    "traveled_before": "no"
+},
+"Belarus": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "4 hours",
+    "points_of_interest": ["Minsk", "Mir Castle", "Bialowieza Forest"],
+    "traveled_before": "no"
+},
+"Belgium": {
+    "safety_rating": "High",
+    "travel_time_seattle": "11 hours",
+    "travel_time_cork": "1 hour",
+    "points_of_interest": ["Brussels", "Bruges", "Ghent"],
+    "traveled_before": "yes"
+},
+"Belize": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "8 hours",
+    "travel_time_cork": "13 hours",
+    "points_of_interest": ["Great Blue Hole", "Ambergris Caye", "Belize Barrier Reef"],
+    "traveled_before": "no"
+},
+"Benin": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "19 hours",
+    "travel_time_cork": "12 hours",
+    "points_of_interest": ["Pendjari National Park", "Ouidah", "Cotonou"],
+    "traveled_before": "no"
+},
+"Bhutan": {
+    "safety_rating": "High",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "18 hours",
+    "points_of_interest": ["Paro Taktsang", "Thimphu", "Punakha Dzong"],
+    "traveled_before": "no"
+},
+    "Bolivia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Salar de Uyuni", "La Paz", "Lake Titicaca"],
+    "traveled_before": "no"
+},
+"Bosnia and Herzegovina": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "4 hours",
+    "points_of_interest": ["Sarajevo", "Mostar", "Kravica Waterfall"],
+    "traveled_before": "no"
+},
+"Botswana": {
+    "safety_rating": "High",
+    "travel_time_seattle": "24 hours",
+    "travel_time_cork": "18 hours",
+    "points_of_interest": ["Okavango Delta", "Chobe National Park", "Kalahari Desert"],
+    "traveled_before": "no"
+},
+"Brunei": {
+    "safety_rating": "High",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Sultan Omar Ali Saifuddin Mosque", "Ulu Temburong National Park", "Kampong Ayer"],
+    "traveled_before": "no"
+},
+"Bulgaria": {
+    "safety_rating": "High",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "3 hours",
+    "points_of_interest": ["Sofia", "Rila Monastery", "Plovdiv"],
+    "traveled_before": "no"
+},
+"Burkina Faso": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "12 hours",
+    "points_of_interest": ["Banfora", "Tiebele", "Ouagadougou"],
+    "traveled_before": "no"
+},
+"Burundi": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "24 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Lake Tanganyika", "Rusizi National Park", "Kibira National Park"],
+    "traveled_before": "no"
+},
+"Côte d'Ivoire": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "19 hours",
+    "travel_time_cork": "12 hours",
+    "points_of_interest": ["Abidjan", "Basilica of Our Lady of Peace", "Taï National Park"],
+    "traveled_before": "no"
+},
+"Cabo Verde": {
+    "safety_rating": "High",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "6 hours",
+    "points_of_interest": ["Sal Island", "Santiago Island", "Mindelo"],
+    "traveled_before": "no"
+},
+    
+"Cambodia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Angkor Wat", "Phnom Penh", "Koh Rong"],
+    "traveled_before": "no"
+},
+"Cameroon": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "22 hours",
+    "travel_time_cork": "13 hours",
+    "points_of_interest": ["Mount Cameroon", "Waza National Park", "Douala"],
+    "traveled_before": "no"
+},
+"Central African Republic": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "24 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Dzanga-Sangha National Park", "Bangui", "Chutes de Boali"],
+    "traveled_before": "no"
+},
+"Chad": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "22 hours",
+    "travel_time_cork": "13 hours",
+    "points_of_interest": ["Zakouma National Park", "Lakes of Ounianga", "N'Djamena"],
+    "traveled_before": "no"
+},
+"China": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "12 hours",
+    "travel_time_cork": "12 hours",
+    "points_of_interest": ["Great Wall of China", "Beijing", "Terracotta Army"],
+    "traveled_before": "yes"
+},
+"Comoros": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "26 hours",
+    "travel_time_cork": "18 hours",
+    "points_of_interest": ["Mount Karthala", "Moroni", "Moheli Marine Park"],
+    "traveled_before": "no"
+},
+"Congo (Republic of the Congo)": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "23 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Odzala-Kokoua National Park", "Brazzaville", "Lefini Reserve"],
+    "traveled_before": "no"
+},
+"Croatia": {
+    "safety_rating": "High",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "3 hours",
+    "points_of_interest": ["Dubrovnik", "Plitvice Lakes", "Split"],
+    "traveled_before": "no"
+},
+"Cuba": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "10 hours",
+    "travel_time_cork": "11 hours",
+    "points_of_interest": ["Havana", "Varadero", "Trinidad"],
+    "traveled_before": "no"
+},
+"Cyprus": {
+    "safety_rating": "High",
+    "travel_time_seattle": "16 hours",
+    "travel_time_cork": "5 hours",
+    "points_of_interest": ["Nicosia", "Paphos", "Limassol"],
+    "traveled_before": "no"
+},
+"Czech Republic": {
+    "safety_rating": "High",
+    "travel_time_seattle": "13 hours",
+    "travel_time_cork": "2 hours",
+    "points_of_interest": ["Prague", "Cesky Krumlov", "Karlovy Vary"],
+    "traveled_before": "no"
+},
+"Democratic Republic of the Congo": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "24 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Virunga National Park", "Kinshasa", "Garamba National Park"],
+    "traveled_before": "no"
+},
+"Denmark": {
+    "safety_rating": "High",
+    "travel_time_seattle": "11 hours",
+    "travel_time_cork": "2 hours",
+    "points_of_interest": ["Copenhagen", "Tivoli Gardens", "Aarhus"],
+    "traveled_before": "yes"
+},
+"Djibouti": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "22 hours",
+    "travel_time_cork": "13 hours",
+    "points_of_interest": ["Lake Assal", "Tadjoura", "Djibouti City"],
+    "traveled_before": "no"
+},
+"Dominica": {
+    "safety_rating": "High",
+    "travel_time_seattle": "11 hours",
+    "travel_time_cork": "10 hours",
+    "points_of_interest": ["Boiling Lake", "Morne Trois Pitons", "Roseau"],
+    "traveled_before": "no"
+},
+
     "Denmark": {
     "safety_rating": "High",
     "travel_time_seattle": "11 hours",
     "travel_time_cork": "2 hours",
     "points_of_interest": ["Tivoli Gardens", "Nyhavn", "The Little Mermaid"],
+    "traveled_before": "no"
+},
+    "Ecuador": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "11 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Galápagos Islands", "Quito", "Cotopaxi National Park"],
+    "traveled_before": "no"
+},
+"El Salvador": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "8 hours",
+    "travel_time_cork": "13 hours",
+    "points_of_interest": ["San Salvador", "Ruta de Las Flores", "El Boquerón National Park"],
+    "traveled_before": "no"
+},
+"Equatorial Guinea": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "24 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Malabo", "Bioko Island", "Monte Alen National Park"],
+    "traveled_before": "no"
+},
+"Eritrea": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Asmara", "Dahlak Archipelago", "Massawa"],
+    "traveled_before": "no"
+},
+"Estonia": {
+    "safety_rating": "High",
+    "travel_time_seattle": "13 hours",
+    "travel_time_cork": "3 hours",
+    "points_of_interest": ["Tallinn", "Lahemaa National Park", "Saaremaa Island"],
+    "traveled_before": "no"
+},
+"Eswatini": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "23 hours",
+    "travel_time_cork": "17 hours",
+    "points_of_interest": ["Hlane Royal National Park", "Lobamba", "Sibebe Rock"],
+    "traveled_before": "no"
+},
+"Ethiopia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "22 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Lalibela", "Simien Mountains", "Addis Ababa"],
+    "traveled_before": "no"
+},
+"Fiji": {
+    "safety_rating": "High",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "24 hours",
+    "points_of_interest": ["Nadi", "Mamanuca Islands", "Yasawa Islands"],
+    "traveled_before": "no"
+},
+    "Gabon": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Libreville", "Loango National Park", "Ogooué River"],
+    "traveled_before": "no"
+},
+"Gambia": {
+    "safety_rating": "High",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "8 hours",
+    "points_of_interest": ["Banjul", "Kachikally Crocodile Pool", "Senegambia Strip"],
+    "traveled_before": "no"
+},
+"Georgia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "5 hours",
+    "points_of_interest": ["Tbilisi", "Kazbegi National Park", "Batumi"],
+    "traveled_before": "no"
+},
+"Ghana": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "11 hours",
+    "points_of_interest": ["Accra", "Kakum National Park", "Cape Coast Castle"],
+    "traveled_before": "no"
+},
+"Germany": {
+    "safety_rating": "High",
+    "travel_time_seattle": "10 hours",
+    "travel_time_cork": "2 hours",
+    "points_of_interest": ["Berlin", "Neuschwanstein Castle", "Munich"],
+    "traveled_before": "yes"
+},
+"Grenada": {
+    "safety_rating": "High",
+    "travel_time_seattle": "12 hours",
+    "travel_time_cork": "9 hours",
+    "points_of_interest": ["St. George's", "Grand Anse Beach", "Levera National Park"],
+    "traveled_before": "no"
+},
+"Guatemala": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "10 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Antigua", "Tikal", "Lake Atitlán"],
+    "traveled_before": "no"
+},
+"Guinea": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "23 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Conakry", "Fouta Djallon", "Îles de Los"],
     "traveled_before": "no"
 },
     "Germany": {
@@ -20,6 +414,64 @@
     "points_of_interest": ["Berlin Wall", "Neuschwanstein Castle", "Brandenburg Gate"],
     "traveled_before": "yes"
 },
+    "Guinea-Bissau": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "24 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Bissau", "Orango Islands", "Bolama"],
+    "traveled_before": "no"
+},
+"Guyana": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "11 hours",
+    "points_of_interest": ["Georgetown", "Kaieteur Falls", "Iwokrama Forest"],
+    "traveled_before": "no"
+},
+"Haiti": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "12 hours",
+    "travel_time_cork": "11 hours",
+    "points_of_interest": ["Port-au-Prince", "Citadelle Laferrière", "Labadee"],
+    "traveled_before": "no"
+},
+"Holy See": {
+    "safety_rating": "High",
+    "travel_time_seattle": "11 hours",
+    "travel_time_cork": "3 hours",
+    "points_of_interest": ["St. Peter's Basilica", "Vatican Museums", "Sistine Chapel"],
+    "traveled_before": "yes"
+},
+"Hungary": {
+    "safety_rating": "High",
+    "travel_time_seattle": "13 hours",
+    "travel_time_cork": "3 hours",
+    "points_of_interest": ["Budapest", "Lake Balaton", "Eger"],
+    "traveled_before": "no"
+},
+
+"Indonesia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Bali", "Jakarta", "Komodo National Park"],
+    "traveled_before": "no"
+},
+"Iran": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Tehran", "Persepolis", "Isfahan"],
+    "traveled_before": "no"
+},
+"Iraq": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Baghdad", "Erbil", "Babylon"],
+    "traveled_before": "no"
+}
+
     "Iceland": {
     "safety_rating": "High",
     "travel_time_seattle": "9 hours",
@@ -34,6 +486,7 @@
     "points_of_interest": ["Taj Mahal", "Kerala Backwaters", "Jaipur"],
     "traveled_before": "no"
 },
+    
     "Japan": {
         "safety_rating": "High",
         "travel_time_seattle": "10 hours",
@@ -48,6 +501,643 @@
         "points_of_interest": ["Colosseum", "Venice Canals", "Leaning Tower of Pisa"],
         "traveled_before": "no"
     },
+    "Israel": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "6 hours",
+    "points_of_interest": ["Jerusalem", "Tel Aviv", "Dead Sea"],
+    "traveled_before": "no"
+},
+"Jordan": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "16 hours",
+    "travel_time_cork": "9 hours",
+    "points_of_interest": ["Petra", "Wadi Rum", "Dead Sea"],
+    "traveled_before": "no"
+},
+"Kazakhstan": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Almaty", "Astana", "Charyn Canyon"],
+    "traveled_before": "no"
+},
+"Kenya": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "13 hours",
+    "points_of_interest": ["Nairobi", "Maasai Mara", "Mount Kenya"],
+    "traveled_before": "no"
+},
+"Kiribati": {
+    "safety_rating": "High",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "20 hours",
+    "points_of_interest": ["Tarawa", "Banaba", "Kiritimati"],
+    "traveled_before": "no"
+},
+"Kuwait": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "7 hours",
+    "points_of_interest": ["Kuwait City", "The Avenues", "Kuwait Towers"],
+    "traveled_before": "no"
+},
+"Kyrgyzstan": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "19 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Bishkek", "Issyk-Kul Lake", "Alay Valley"],
+    "traveled_before": "no"
+},
+    "Laos": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "13 hours",
+    "points_of_interest": ["Luang Prabang", "Vang Vieng", "Plain of Jars"],
+    "traveled_before": "no"
+},
+"Latvia": {
+    "safety_rating": "High",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "4 hours",
+    "points_of_interest": ["Riga", "Jūrmala", "Gauja National Park"],
+    "traveled_before": "no"
+},
+"Lebanon": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "16 hours",
+    "travel_time_cork": "9 hours",
+    "points_of_interest": ["Beirut", "Byblos", "Baalbek"],
+    "traveled_before": "no"
+},
+"Lesotho": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "24 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Thaba Bosiu", "Maletsunyane Falls", "Sani Pass"],
+    "traveled_before": "no"
+},
+"Liberia": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Monrovia", "Sapo National Park", "Cape Mount"],
+    "traveled_before": "no"
+},
+"Libya": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Tripoli", "Leptis Magna", "Sabratha"],
+    "traveled_before": "no"
+},
+"Liechtenstein": {
+    "safety_rating": "High",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "6 hours",
+    "points_of_interest": ["Vaduz", "Schaan", "Malbun"],
+    "traveled_before": "no"
+},
+"Lithuania": {
+    "safety_rating": "High",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "4 hours",
+    "points_of_interest": ["Vilnius", "Trakai Castle", "Curonian Spit"],
+    "traveled_before": "no"
+},
+    "Luxembourg": {
+    "safety_rating": "High",
+    "travel_time_seattle": "12 hours",
+    "travel_time_cork": "2 hours",
+    "points_of_interest": ["Luxembourg City", "Vianden Castle", "Mullerthal Trail"],
+    "traveled_before": "no"
+},
+"Madagascar": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Antananarivo", "Avenue of the Baobabs", "Isalo National Park"],
+    "traveled_before": "no"
+},
+"Malawi": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "22 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Lake Malawi", "Lilongwe", "Liwonde National Park"],
+    "traveled_before": "no"
+},
+"Maldives": {
+    "safety_rating": "High",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "17 hours",
+    "points_of_interest": ["Malé", "Banana Reef", "Maafushi"],
+    "traveled_before": "no"
+},
+"Mali": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Bamako", "Timbuktu", "Djenne"],
+    "traveled_before": "no"
+},
+"Malta": {
+    "safety_rating": "High",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "3 hours",
+    "points_of_interest": ["Valletta", "Mdina", "Blue Lagoon"],
+    "traveled_before": "no"
+},
+"Marshall Islands": {
+    "safety_rating": "High",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "17 hours",
+    "points_of_interest": ["Majuro", "Bikini Atoll", "Mili Atoll"],
+    "traveled_before": "no"
+},
+"Mauritania": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "24 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Nouakchott", "Chinguetti", "Adrar"],
+    "traveled_before": "no"
+},
+"Mauritius": {
+    "safety_rating": "High",
+    "travel_time_seattle": "19 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Port Louis", "Mauritius Botanical Garden", "Le Morne"],
+    "traveled_before": "no"
+},
+    "Micronesia": {
+    "safety_rating": "High",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "17 hours",
+    "points_of_interest": ["Pohnpei", "Chuuk Lagoon", "Yap"],
+    "traveled_before": "no"
+},
+"Moldova": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "17 hours",
+    "travel_time_cork": "6 hours",
+    "points_of_interest": ["Chișinău", "Cricova Winery", "Orheiul Vechi"],
+    "traveled_before": "no"
+},
+"Monaco": {
+    "safety_rating": "High",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "4 hours",
+    "points_of_interest": ["Monte Carlo", "Palais Princier", "Casino de Monte-Carlo"],
+    "traveled_before": "no"
+},
+"Mongolia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Ulaanbaatar", "Gobi Desert", "Terelj National Park"],
+    "traveled_before": "no"
+},
+"Montenegro": {
+    "safety_rating": "High",
+    "travel_time_seattle": "16 hours",
+    "travel_time_cork": "9 hours",
+    "points_of_interest": ["Kotor", "Budva", "Durmitor National Park"],
+    "traveled_before": "no"
+},
+"Morocco": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "12 hours",
+    "points_of_interest": ["Marrakech", "Fez", "Chefchaouen"],
+    "traveled_before": "no"
+},
+"Mozambique": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "22 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Maputo", "Bazaruto Archipelago", "Gorongosa National Park"],
+    "traveled_before": "no"
+},
+"Myanmar": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "19 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Yangon", "Bagan", "Inle Lake"],
+    "traveled_before": "no"
+},
+"Namibia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Windhoek", "Etosha National Park", "Sossusvlei"],
+    "traveled_before": "no"
+},
+    "Nauru": {
+    "safety_rating": "High",
+    "travel_time_seattle": "22 hours",
+    "travel_time_cork": "17 hours",
+    "points_of_interest": ["Anibare Bay", "Nauru International Airport", "Buada Lagoon"],
+    "traveled_before": "no"
+},
+"Nepal": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Kathmandu", "Mount Everest", "Pokhara"],
+    "traveled_before": "no"
+},
+"Netherlands": {
+    "safety_rating": "High",
+    "travel_time_seattle": "10 hours",
+    "travel_time_cork": "1 hour",
+    "points_of_interest": ["Amsterdam", "Keukenhof", "Rijksmuseum"],
+    "traveled_before": "no"
+},
+"Nicaragua": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "16 hours",
+    "travel_time_cork": "12 hours",
+    "points_of_interest": ["Granada", "Ometepe", "Masaya Volcano"],
+    "traveled_before": "no"
+},
+"Niger": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "22 hours",
+    "travel_time_cork": "17 hours",
+    "points_of_interest": ["Niamey", "Zinder", "Air Mountains"],
+    "traveled_before": "no"
+},
+"Nigeria": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Lagos", "Abuja", "Zuma Rock"],
+    "traveled_before": "no"
+},
+"North Macedonia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "16 hours",
+    "travel_time_cork": "9 hours",
+    "points_of_interest": ["Skopje", "Lake Ohrid", "Bitola"],
+    "traveled_before": "no"
+},
+    "Oman": {
+    "safety_rating": "High",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Muscat", "Nizwa Fort", "Wahiba Sands"],
+    "traveled_before": "no"
+},
+"Pakistan": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "19 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Islamabad", "Lahore", "Karachi"],
+    "traveled_before": "no"
+},
+"Palau": {
+    "safety_rating": "High",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Koror", "Rock Islands", "Palau Aquarium"],
+    "traveled_before": "no"
+},
+"Palestine": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "19 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Bethlehem", "Jericho", "Ramallah"],
+    "traveled_before": "no"
+},
+"Papua New Guinea": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "22 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Port Moresby", "Kokoda Track", "Rabaul"],
+    "traveled_before": "no"
+},
+"Paraguay": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Asunción", "Iguazu Falls", "Encarnación"],
+    "traveled_before": "no"
+},
+"Philippines": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Manila", "Boracay", "Palawan"],
+    "traveled_before": "no"
+},
+"Poland": {
+    "safety_rating": "High",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "3 hours",
+    "points_of_interest": ["Kraków", "Warsaw", "Wrocław"],
+    "traveled_before": "no"
+},
+    "Qatar": {
+    "safety_rating": "High",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "8 hours",
+    "points_of_interest": ["Doha", "The Pearl-Qatar", "Souq Waqif"],
+    "traveled_before": "no"
+},
+"Romania": {
+    "safety_rating": "High",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "4 hours",
+    "points_of_interest": ["Bucharest", "Transylvania", "Bran Castle"],
+    "traveled_before": "no"
+},
+"Russia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "6 hours",
+    "points_of_interest": ["Moscow", "St. Petersburg", "Lake Baikal"],
+    "traveled_before": "no"
+},
+"Rwanda": {
+    "safety_rating": "High",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Kigali", "Volcanoes National Park", "Lake Kivu"],
+    "traveled_before": "no"
+},
+"Saint Kitts and Nevis": {
+    "safety_rating": "High",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "12 hours",
+    "points_of_interest": ["Basseterre", "Brimstone Hill Fortress", "St. Kitts Scenic Railway"],
+    "traveled_before": "no"
+},
+"Saint Lucia": {
+    "safety_rating": "High",
+    "travel_time_seattle": "17 hours",
+    "travel_time_cork": "11 hours",
+    "points_of_interest": ["Castries", "Pigeon Island", "The Pitons"],
+    "traveled_before": "no"
+},
+"Saint Vincent and the Grenadines": {
+    "safety_rating": "High",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "11 hours",
+    "points_of_interest": ["Kingstown", "Bequia", "Mayreau"],
+    "traveled_before": "no"
+},
+"Samoa": {
+    "safety_rating": "High",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Apia", "Savai'i", "To Sua Ocean Trench"],
+    "traveled_before": "no"
+},
+"San Marino": {
+    "safety_rating": "High",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "5 hours",
+    "points_of_interest": ["Guaita", "Basilica di San Marino", "Piazza della Libertà"],
+    "traveled_before": "no"
+},
+    "Sao Tome and Principe": {
+    "safety_rating": "High",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["São Tomé", "Príncipe Island", "Obo National Park"],
+    "traveled_before": "no"
+},
+"Saudi Arabia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "10 hours",
+    "points_of_interest": ["Riyadh", "Mecca", "Al-Ula"],
+    "traveled_before": "no"
+},
+"Senegal": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "19 hours",
+    "travel_time_cork": "13 hours",
+    "points_of_interest": ["Dakar", "Gorée Island", "Lake Retba"],
+    "traveled_before": "no"
+},
+"Serbia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "5 hours",
+    "points_of_interest": ["Belgrade", "Novi Sad", "Tara National Park"],
+    "traveled_before": "no"
+},
+"Seychelles": {
+    "safety_rating": "High",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "13 hours",
+    "points_of_interest": ["Mahé", "Praslin", "Aldabra Atoll"],
+    "traveled_before": "no"
+},
+"Sierra Leone": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "22 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Freetown", "Tiwai Island", "Bunce Island"],
+    "traveled_before": "no"
+},
+"Slovakia": {
+    "safety_rating": "High",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "5 hours",
+    "points_of_interest": ["Bratislava", "High Tatras", "Slovak Paradise"],
+    "traveled_before": "no"
+},
+"Slovenia": {
+    "safety_rating": "High",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "5 hours",
+    "points_of_interest": ["Ljubljana", "Lake Bled", "Postojna Cave"],
+    "traveled_before": "no"
+},
+"Solomon Islands": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "22 hours",
+    "travel_time_cork": "17 hours",
+    "points_of_interest": ["Honiara", "Marovo Lagoon", "Gizo"],
+    "traveled_before": "no"
+},
+    "Somalia": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Mogadishu", "Hargeisa", "Laas Geel"],
+    "traveled_before": "no"
+},
+"South Sudan": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "17 hours",
+    "points_of_interest": ["Juba", "Bor", "Boma National Park"],
+    "traveled_before": "no"
+},
+"Sri Lanka": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "12 hours",
+    "points_of_interest": ["Colombo", "Sigiriya", "Kandy"],
+    "traveled_before": "no"
+},
+"Sudan": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Khartoum", "Pyramids of Meroë", "Nubian Museum"],
+    "traveled_before": "no"
+},
+"Suriname": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Paramaribo", "Brownsberg Nature Park", "Jodensavanne"],
+    "traveled_before": "no"
+},
+"Sweden": {
+    "safety_rating": "High",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "3 hours",
+    "points_of_interest": ["Stockholm", "Göteborg", "Malmö"],
+    "traveled_before": "no"
+},
+"Syria": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Damascus", "Aleppo", "Palmyra"],
+    "traveled_before": "no"
+},
+    "Tajikistan": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Dushanbe", "Pamir Mountains", "Iskanderkul Lake"],
+    "traveled_before": "no"
+},
+"Tanzania": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Dar es Salaam", "Mount Kilimanjaro", "Serengeti National Park"],
+    "traveled_before": "no"
+},
+"Timor-Leste": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Dili", "Atauro Island", "Jaco Island"],
+    "traveled_before": "no"
+},
+"Togo": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "13 hours",
+    "points_of_interest": ["Lomé", "Koutammakou", "Togoville"],
+    "traveled_before": "no"
+},
+"Tonga": {
+    "safety_rating": "High",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Nuku'alofa", "Ha'amonga'a Maui", "Vava'u"],
+    "traveled_before": "no"
+},
+"Trinidad and Tobago": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "16 hours",
+    "travel_time_cork": "10 hours",
+    "points_of_interest": ["Port of Spain", "Tobago", "Maracas Bay"],
+    "traveled_before": "no"
+},
+"Tunisia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "5 hours",
+    "points_of_interest": ["Tunis", "Carthage", "Sidi Bou Said"],
+    "traveled_before": "no"
+},
+"Turkmenistan": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Ashgabat", "Darvaza Gas Crater", "Merv"],
+    "traveled_before": "no"
+},
+"Tuvalu": {
+    "safety_rating": "High",
+    "travel_time_seattle": "25 hours",
+    "travel_time_cork": "19 hours",
+    "points_of_interest": ["Funafuti", "Nanumea", "Nukufetau"],
+    "traveled_before": "no"
+},
+"Uganda": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Kampala", "Queen Elizabeth National Park", "Murchison Falls"],
+    "traveled_before": "no"
+},
+    "Ukraine": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "16 hours",
+    "travel_time_cork": "6 hours",
+    "points_of_interest": ["Kyiv", "Lviv", "Odesa"],
+    "traveled_before": "no"
+},
+"United Arab Emirates": {
+    "safety_rating": "High",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "8 hours",
+    "points_of_interest": ["Dubai", "Abu Dhabi", "Sharjah"],
+    "traveled_before": "no"
+},
+"Uzbekistan": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "12 hours",
+    "points_of_interest": ["Tashkent", "Samarkand", "Bukhara"],
+    "traveled_before": "no"
+},
+"Vanuatu": {
+    "safety_rating": "High",
+    "travel_time_seattle": "24 hours",
+    "travel_time_cork": "20 hours",
+    "points_of_interest": ["Port Vila", "Espiritu Santo", "Tanna Island"],
+    "traveled_before": "no"
+},
+"Venezuela": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "17 hours",
+    "travel_time_cork": "11 hours",
+    "points_of_interest": ["Caracas", "Angel Falls", "Los Roques"],
+    "traveled_before": "no"
+},
+"Yemen": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "21 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Sana'a", "Socotra Island", "Shibam"],
+    "traveled_before": "no"
+},
+"Zambia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Lusaka", "Victoria Falls", "South Luangwa National Park"],
+    "traveled_before": "no"
+},
+"Zimbabwe": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "19 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Harare", "Victoria Falls", "Hwange National Park"],
+    "traveled_before": "no"
+},
     "France": {
         "safety_rating": "High",
         "travel_time_seattle": "10 hours",
