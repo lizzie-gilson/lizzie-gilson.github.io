@@ -1,4 +1,39 @@
 {
+    "Argentina": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "17 hours",
+    "points_of_interest": ["Iguazu Falls", "Buenos Aires", "Patagonia"],
+    "traveled_before": "no"
+},
+    "Denmark": {
+    "safety_rating": "High",
+    "travel_time_seattle": "11 hours",
+    "travel_time_cork": "2 hours",
+    "points_of_interest": ["Tivoli Gardens", "Nyhavn", "The Little Mermaid"],
+    "traveled_before": "no"
+},
+    "Germany": {
+    "safety_rating": "High",
+    "travel_time_seattle": "12 hours",
+    "travel_time_cork": "2 hours",
+    "points_of_interest": ["Berlin Wall", "Neuschwanstein Castle", "Brandenburg Gate"],
+    "traveled_before": "yes"
+},
+    "Iceland": {
+    "safety_rating": "High",
+    "travel_time_seattle": "9 hours",
+    "travel_time_cork": "3 hours",
+    "points_of_interest": ["Blue Lagoon", "Golden Circle", "Reykjavik"],
+    "traveled_before": "no"
+},
+    "India": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "18 hours",
+    "travel_time_cork": "16 hours",
+    "points_of_interest": ["Taj Mahal", "Kerala Backwaters", "Jaipur"],
+    "traveled_before": "no"
+},
     "Japan": {
         "safety_rating": "High",
         "travel_time_seattle": "10 hours",
