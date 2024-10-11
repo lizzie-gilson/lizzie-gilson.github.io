@@ -27,6 +27,13 @@
     "points_of_interest": ["Fort-de-France", "Mount Pelée", "Les Salines Beach"],
     "traveled_before": "no"
 },
+    "Réunion": {
+    "safety_rating": "High",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "12 hours",
+    "points_of_interest": ["Piton de la Fournaise", "Cirque de Mafate", "Saint-Denis"],
+    "traveled_before": "no"
+},
     "Kosovo": {
     "safety_rating": "Medium",
     "travel_time_seattle": "16 hours",
