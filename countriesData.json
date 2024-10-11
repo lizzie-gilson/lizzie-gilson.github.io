@@ -20,6 +20,34 @@
     "points_of_interest": ["Algiers", "Tassili n'Ajjer", "Tipaza"],
     "traveled_before": "no"
 },
+    "Martinique": {
+    "safety_rating": "High",
+    "travel_time_seattle": "11 hours",
+    "travel_time_cork": "9 hours",
+    "points_of_interest": ["Fort-de-France", "Mount Pelée", "Les Salines Beach"],
+    "traveled_before": "no"
+},
+    "Kosovo": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "16 hours",
+    "travel_time_cork": "10 hours",
+    "points_of_interest": ["Pristina", "Gjakova", "Mitrovica"],
+    "traveled_before": "no"
+},
+    "Greenland": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "12 hours",
+    "points_of_interest": ["Nuuk", "Ilulissat Icefjord", "Qaqortoq"],
+    "traveled_before": "no"
+},
+    "Falkland Islands": {
+    "safety_rating": "High",
+    "travel_time_seattle": "20 hours",
+    "travel_time_cork": "18 hours",
+    "points_of_interest": ["Stanley", "Volunteer Point", "Carcass Island"],
+    "traveled_before": "no"
+},
     "Puerto Rico": {
     "safety_rating": "Medium",
     "travel_time_seattle": "10 hours",
@@ -188,14 +216,27 @@
     "points_of_interest": ["Abidjan", "Basilica of Our Lady of Peace", "Taï National Park"],
     "traveled_before": "no"
 },
-"Cabo Verde": {
+"Cape Verde": {
     "safety_rating": "High",
     "travel_time_seattle": "14 hours",
     "travel_time_cork": "6 hours",
     "points_of_interest": ["Sal Island", "Santiago Island", "Mindelo"],
     "traveled_before": "no"
 },
-    
+    "Western Sahara": {
+    "safety_rating": "Low",
+    "travel_time_seattle": "19 hours",
+    "travel_time_cork": "15 hours",
+    "points_of_interest": ["Laayoune", "Dakhla", "Boujdour"],
+    "traveled_before": "no"
+},
+    "The Gambia": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "16 hours",
+    "travel_time_cork": "9 hours",
+    "points_of_interest": ["Banjul", "Kunta Kinteh Island", "Abuko Nature Reserve"],
+    "traveled_before": "no"
+},
 "Cambodia": {
     "safety_rating": "Medium",
     "travel_time_seattle": "18 hours",
@@ -238,7 +279,7 @@
     "points_of_interest": ["Mount Karthala", "Moroni", "Moheli Marine Park"],
     "traveled_before": "no"
 },
-"Congo (Republic of the Congo)": {
+"Republic of the Congo": {
     "safety_rating": "Medium",
     "travel_time_seattle": "23 hours",
     "travel_time_cork": "14 hours",
@@ -788,7 +829,7 @@
     "points_of_interest": ["Lagos", "Abuja", "Zuma Rock"],
     "traveled_before": "no"
 },
-"North Macedonia": {
+"Macedonia": {
     "safety_rating": "Medium",
     "travel_time_seattle": "16 hours",
     "travel_time_cork": "9 hours",
@@ -865,7 +906,7 @@
     "points_of_interest": ["Bucharest", "Transylvania", "Bran Castle"],
     "traveled_before": "no"
 },
-"Russia": {
+"Russian Federation": {
     "safety_rating": "Medium",
     "travel_time_seattle": "14 hours",
     "travel_time_cork": "6 hours",
