@@ -20,6 +20,13 @@
     "points_of_interest": ["Algiers", "Tassili n'Ajjer", "Tipaza"],
     "traveled_before": "no"
 },
+    "Puerto Rico": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "10 hours",
+    "travel_time_cork": "9 hours",
+    "points_of_interest": ["San Juan", "El Yunque National Forest", "Vieques"],
+    "traveled_before": "no"
+},
     "French Guiana": {
     "safety_rating": "Medium",
     "travel_time_seattle": "15 hours",
