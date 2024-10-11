@@ -127,6 +127,9 @@
             border-radius: 50%;
             margin-right: 10px;
         }
+          .safety-veryhigh {
+            background-color: darkgreen;
+        }
         .safety-high {
             background-color: green;
         }
@@ -658,6 +661,7 @@
                 let safetyClass = 'safety-low';
                 if (data.safety_rating === 'High') safetyClass = 'safety-high';
                 else if (data.safety_rating === 'Medium') safetyClass = 'safety-medium';
+                else if (data.safety_rating === 'Very High') safetyClass = 'safety-veryhigh';
 
             const pointsOfInterestList = data.points_of_interest.map(point => `<li>${point}</li>`).join('');
 
