@@ -27,6 +27,13 @@
     "points_of_interest": ["Fort-de-France", "Mount Pelée", "Les Salines Beach"],
     "traveled_before": "no"
 },
+    "Taiwan": {
+    "safety_rating": "High",
+    "travel_time_seattle": "14 hours",
+    "travel_time_cork": "14 hours",
+    "points_of_interest": ["Taipei 101", "Taroko Gorge", "Sun Moon Lake"],
+    "traveled_before": "no"
+},
     "Réunion": {
     "safety_rating": "High",
     "travel_time_seattle": "20 hours",
@@ -188,7 +195,7 @@
     "points_of_interest": ["Okavango Delta", "Chobe National Park", "Kalahari Desert"],
     "traveled_before": "no"
 },
-"Brunei": {
+"Brunei Darussalam": {
     "safety_rating": "High",
     "travel_time_seattle": "18 hours",
     "travel_time_cork": "16 hours",
