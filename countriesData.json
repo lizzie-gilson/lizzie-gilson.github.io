@@ -20,6 +20,13 @@
     "points_of_interest": ["Algiers", "Tassili n'Ajjer", "Tipaza"],
     "traveled_before": "no"
 },
+    "French Guiana": {
+    "safety_rating": "Medium",
+    "travel_time_seattle": "15 hours",
+    "travel_time_cork": "11 hours",
+    "points_of_interest": ["Cayenne", "Îles du Salut", "Guiana Space Centre"],
+    "traveled_before": "no"
+},
 "Andorra": {
     "safety_rating": "High",
     "travel_time_seattle": "14 hours",
